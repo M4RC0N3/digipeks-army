@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/digipeks-army/static/css/main.4c6bc02a.css",
+    "main.js": "/digipeks-army/static/js/main.1d9c4c6b.js",
+    "static/js/787.6a5df1db.chunk.js": "/digipeks-army/static/js/787.6a5df1db.chunk.js",
+    "index.html": "/digipeks-army/index.html",
+    "main.4c6bc02a.css.map": "/digipeks-army/static/css/main.4c6bc02a.css.map",
+    "main.1d9c4c6b.js.map": "/digipeks-army/static/js/main.1d9c4c6b.js.map",
+    "787.6a5df1db.chunk.js.map": "/digipeks-army/static/js/787.6a5df1db.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c6bc02a.css",
+    "static/js/main.1d9c4c6b.js"
+  ]
+}
