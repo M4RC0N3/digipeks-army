@@ -32,16 +32,16 @@ const Home = () => {
             <header>
                 <img src={DigipeksLogo} alt="Digipeks-army logo" width={35} height={35} draggable={false}/>
                 <div className="social-media-container">
-                    <a href="javascript:void(0)">
+                    <a href="https://github.com/M4RC0N3">
                         <DiscordIcon/>
                     </a>
-                    <a href="javascript:void(0)">
+                    <a href="https://github.com/M4RC0N3">
                         <FacebookIcon/>
                     </a>
-                    <a href="javascript:void(0)">
+                    <a href="https://github.com/M4RC0N3">
                         <TwitterIcon/>
                     </a>
-                    <a href="javascript:void(0)">
+                    <a href="https://github.com/M4RC0N3">
                         <InstagramIcon/>
                     </a>
                 </div>
