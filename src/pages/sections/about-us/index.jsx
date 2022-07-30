@@ -10,7 +10,7 @@ const Index =()=>{
         rendererSettings: {
           preserveAspectRatio: "xMidYMid slice"
         }
-      };
+    };
     return(
         <div className="about-us-container">
             <p>Section in development</p>

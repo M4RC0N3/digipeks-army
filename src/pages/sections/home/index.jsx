@@ -25,7 +25,7 @@ const Home = () => {
         setStop(true);
         setTimeout(()=>{
             setStop(false);
-        },3000);
+        },1800);
     });
     return (
         <div className="home-container">
