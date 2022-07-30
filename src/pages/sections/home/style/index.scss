@@ -1,25 +1,331 @@
+@import url('../../../../styles/_font-family.scss');
 .home-container{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(93, 0, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    h1{
-        font-family: sans-serif;
-        font-weight: bold;
-        color: #fff;
-        font-size: 3rem;
-        box-sizing: border-box;
-        padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ECDFC3;
+    background-image: url('../../../../assets/images/background-patern-home.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    header{
         width: 100%;
-        text-align: center;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 150;
+        img{
+            transform-origin: 50% 50%;
+           &:hover{
+                animation: logoRotate 4s linear infinite;
+            }
+        }
+        @keyframes logoRotate{
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .social-media-container{
+            display: flex;
+            align-items: center;
+            a{
+                margin: 0 10px;
+                svg{
+                    fill: #fff;
+                    transition: .2s ease-out;
+                    &:hover{
+                        fill: #D16464;
+                    }
+                }
+            }
+        }
     }
-    .container{
-        width: 60%;
-        height: auto;
-        max-width: 600px;
-        margin-top: 40px;
+    .welcome-container{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        position: relative;
+        .title-container{
+            max-width: 900px;
+            height: 100%;
+            box-sizing: border-box;
+            padding-top: 200px;
+            position: relative;
+            z-index: 100;
+            h1{
+                .title{
+                    font-family: "salden-black", sans-serif;
+                    font-size: 8rem;
+                    color: #fff;
+                    margin-left: 22px;
+                    text-shadow: 0 8px 24px rgba(0, 0, 0, 9%);
+                    transform: translateY(30px);
+                    opacity: 0;
+                    animation: titleUp .7s cubic-bezier( 0.36, 0.52, 0.22, 1.03 ) forwards;
+                }
+                @mixin ballon(){
+                    position: absolute;
+                    transform-origin: 50% 0;
+                    transform: rotate(40deg);
+                    width: 7%;
+                    height: 50%;
+                    animation: ballonBallance 2s cubic-bezier( 0.5, 0.26, 0.32, 0.79 ) .5s forwards, balanceInfinite 2s cubic-bezier( 0.46, 0.25, 0.57, 1.03 ) 3s infinite alternate;
+                    svg{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    transition: .7s ease-out;
+                }
+                .second-title-container{
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-53%);
+                    z-index: 1000;
+                    opacity: 0;
+                    animation: titleBallon .7s cubic-bezier( 0.36, 0.52, 0.18, 1 ) .5s forwards;
+                    .second-title{
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+                        z-index: 10;
+                        pointer-events: none;
+                        svg{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .first-ballon-container{
+                        left: 1%;
+                        top: 42%;
+                        @include ballon();
+                    }
+                    .second-ballon-container{
+                        right: 5%;
+                        bottom: -34%;
+                        @include ballon();
+                    }
+                }          
+            }
+        }
+        .tree{
+            position: absolute;
+            top: -34px;
+            z-index: 0;
+            width: 73%;
+            left: -1%;
+        }
+        .coins{
+            position: absolute;
+            bottom: -106px;
+            left: -71px;
+        }
+    }
+    @mixin columnsColors(){
+        width:100%;
+        min-width: 250px; 
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            font-family: 'valorant', sans-serif;
+            color: #fff;
+            font-size: 20rem;
+            z-index: 10;
+            position: relative;
+            margin-top: 20px;
+        }
+        .pic-container{
+            width: 100%;
+            display: flex;
+            position: absolute;
+            box-sizing: border-box;
+            padding: 5px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .nft-container{
+        width: 100%;
+        height: 100vh;
+        .columns-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            position: relative;
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+            .red-column-container{
+                @include columnsColors();
+                background-color: #D16464;
+                .pic-container{
+                    bottom: 0
+                }
+                box-sizing: border-box;
+                overflow: hidden;
+                transform-origin: 50% 0;
+                height: 0;
+                animation: columnColor .8s cubic-bezier( 0.55, 0.61, 0.22, 1 ) 1.5s forwards;
+                &::after{
+                    content: "";
+                    transform: scaleY(1);
+                    transform-origin: 50% 100%;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    bottom: 0;
+                    z-index: 15;
+                    background-color: #D16464;
+                    animation: columnsMaskColor 1.1s cubic-bezier( 0.55, 0.61, 0.22, 1 ) 1.7s forwards;
+                }
+            }
+            .yellow-column-container{
+                @include columnsColors();
+                background-color: #D4A864;
+                h2{
+                    margin-top: 180px;
+                }
+                .pic-container{
+                    top: 0;
+                }
+                transform-origin: 50% 0;
+                box-sizing: border-box;
+                overflow: hidden;
+                height: 0;
+                animation: columnColor .8s cubic-bezier( 0.55, 0.61, 0.22, 1 ) 1.9s forwards;
+                &::after{
+                    content: "";
+                    transform: scaleY(1);
+                    transform-origin: 50% 100%;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    bottom: 0;
+                    z-index: 11;
+                    background-color: #D4A864;
+                    animation: columnsMaskColor 1.1s cubic-bezier( 0.55, 0.61, 0.22, 1 ) 2.1s forwards;
+                }
+            }
+            .blue-column-container{
+                @include columnsColors();
+                background-color: #2B7F89;
+                h2{
+                    margin-top: 360px;
+                }
+                transform-origin: 50% 0;
+                box-sizing: border-box;
+                overflow: hidden;
+                height: 0;
+                animation: columnColor .8s cubic-bezier( 0.55, 0.61, 0.22, 1 ) 2.3s forwards;
+                &::after{
+                    content: "";
+                    transform: scaleY(1);
+                    transform-origin: 50% 100%;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    bottom: 0;
+                    z-index: 11;
+                    background-color: #2B7F89;
+                    animation: columnsMaskColor 1.1s cubic-bezier( 0.55, 0.61, 0.22, 1 ) 2.5s forwards;
+                }
+                .pic-container{
+                    top: 20%;
+                    left: 20%;
+                    .mini-pics{
+                        $minipicsDimesion: 150px;
+                        width: $minipicsDimesion;
+                        min-width: $minipicsDimesion;
+                        height: $minipicsDimesion;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+        .container-track{
+            width: 1200px;
+            height: 1200px;
+            right: -202px;
+            top: -124px;
+            position: absolute;
+            box-sizing: border-box;
+            overflow: hidden;
+            z-index: 0;
+        }
+    }
+}
+@import './responsive';
+@keyframes columnColor{
+    from{
+
+        height: 0;
+    }
+    to{
+        height: 100%;
+    }
+}
+@keyframes columnsMaskColor{
+    from{
+        transform: scaleY(1);
+    }
+    to{
+        transform: scaleY(0);
+    }
+}
+@keyframes titleBallon{
+    from{
+        transform: translateX(-53%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
+@keyframes titleUp{
+    from{
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes ballonBallance{
+    0%{
+        transform: rotate(40deg);
+    }
+
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+@keyframes balanceInfinite{
+    0%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+@keyframes bgOpacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
