@@ -345,6 +345,9 @@
     position: absolute;
     right: -668px;
   }
+  .home-container .welcome-container .tree {
+    left: -50px;
+  }
 }
 @media only screen and (max-width: 1544px) {
   .home-container .nft-container .container-track {
@@ -373,6 +376,9 @@
 @media only screen and (max-width: 1400px) {
   .home-container .welcome-container .title-container h1 .title {
     font-size: 5rem;
+  }
+  .home-container .welcome-container .tree {
+    left: -1%;
   }
   .home-container .nft-container .columns-container .column-color {
     min-width: 200px;

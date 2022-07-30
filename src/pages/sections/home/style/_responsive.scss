@@ -12,6 +12,11 @@
                 }
             }
         }
+        .welcome-container{
+            .tree{
+                left: -50px;
+            }
+        }
     }
 }
 @media only screen and(max-width:1544px){
@@ -56,6 +61,9 @@
                         font-size: 5rem;
                     }
                 }
+            }
+            .tree{
+                left: -1%;
             }
         }
         .nft-container{
