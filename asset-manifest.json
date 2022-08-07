@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/digipeks-army/static/css/main.7cc54bf4.css",
-    "main.js": "/digipeks-army/static/js/main.792c6d1d.js",
+    "main.css": "/digipeks-army/static/css/main.a3681bf1.css",
+    "main.js": "/digipeks-army/static/js/main.67e6df78.js",
     "static/js/787.6a5df1db.chunk.js": "/digipeks-army/static/js/787.6a5df1db.chunk.js",
     "static/media/background-patern-home.svg": "/digipeks-army/static/media/background-patern-home.d729991c5a0adb96369b.svg",
     "static/media/Salden-black.otf": "/digipeks-army/static/media/Salden-black.82b58a0ce2096c7a7e26.otf",
+    "static/media/digipeks-logo-green.png": "/digipeks-army/static/media/digipeks-logo-green.0bf367836f85ec16fd79.png",
     "static/media/valorant.ttf": "/digipeks-army/static/media/valorant.86ec8370af32018a2391.ttf",
     "static/media/tree.svg": "/digipeks-army/static/media/tree.68ef891c94782ec6c576771b8ec965a4.svg",
     "static/media/coins.svg": "/digipeks-army/static/media/coins.be55a0aa91562e0a15ba93d8047118d9.svg",
     "index.html": "/digipeks-army/index.html",
-    "main.7cc54bf4.css.map": "/digipeks-army/static/css/main.7cc54bf4.css.map",
-    "main.792c6d1d.js.map": "/digipeks-army/static/js/main.792c6d1d.js.map",
+    "main.a3681bf1.css.map": "/digipeks-army/static/css/main.a3681bf1.css.map",
+    "main.67e6df78.js.map": "/digipeks-army/static/js/main.67e6df78.js.map",
     "787.6a5df1db.chunk.js.map": "/digipeks-army/static/js/787.6a5df1db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cc54bf4.css",
-    "static/js/main.792c6d1d.js"
+    "static/css/main.a3681bf1.css",
+    "static/js/main.67e6df78.js"
   ]
 }
