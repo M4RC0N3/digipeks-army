@@ -202,9 +202,13 @@
             }
             .container-track{
                 width: 163%;
-                height: 125%;
+                height: 1090px;
                 right: -1px;
                 top: 435px;
+                div{
+                    position: absolute;
+                    right: -70%;
+                }
             }
         }
     }
@@ -234,12 +238,11 @@
             }
             .container-track {
                 width: 183%;
-                height: 125%;
+                height: 1080px;
                 right: 0;
                 top: 344px;
                 div{
-                    position: absolute;
-                    right: -70%;
+                    right: -67%;
                 }
             }
         }

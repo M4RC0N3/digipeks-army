@@ -495,9 +495,13 @@
   }
   .home-container .nft-container .container-track {
     width: 163%;
-    height: 125%;
+    height: 1090px;
     right: -1px;
     top: 435px;
+  }
+  .home-container .nft-container .container-track div {
+    position: absolute;
+    right: -70%;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -515,13 +519,12 @@
   }
   .home-container .nft-container .container-track {
     width: 183%;
-    height: 125%;
+    height: 1080px;
     right: 0;
     top: 344px;
   }
   .home-container .nft-container .container-track div {
-    position: absolute;
-    right: -70%;
+    right: -67%;
   }
 }
 @media only screen and (max-width: 450px) {
