@@ -190,7 +190,7 @@
   display: flex;
   position: absolute;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 10px;
 }
 .home-container .nft-container .columns-container .red-column-container .pic-container img {
   width: 100%;
@@ -240,7 +240,7 @@
   display: flex;
   position: absolute;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 10px;
 }
 .home-container .nft-container .columns-container .yellow-column-container .pic-container img {
   width: 100%;
@@ -294,7 +294,7 @@
   display: flex;
   position: absolute;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 10px;
 }
 .home-container .nft-container .columns-container .blue-column-container .pic-container img {
   width: 100%;
@@ -483,6 +483,9 @@
   }
   .home-container .nft-container .columns-container .column-color h2 {
     font-size: 14rem;
+  }
+  .home-container .nft-container .columns-container .column-color .pic-container {
+    padding: 5px;
   }
   .home-container .nft-container .columns-container .column-color .pic-container .mini-pics {
     width: 75px;

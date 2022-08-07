@@ -7,8 +7,8 @@ import Tree from '../../../assets/images/tree.svg';
 import Coins from '../../../assets/images/coins.svg';
 
 import RedDog from '../../../assets/images/red-dog.png';
-import YellowDog from '../../../assets/images/yellow-dog.png';
-import GreenDog from '../../../assets/images/green-dog.png';
+import YellowDogKing from '../../../assets/images/yellow-dog-king.png';
+import GreenDogBall from '../../../assets/images/green-dog-ball.png';
 import {DigipeksArmyTitle, Ballon,DiscordIcon, FacebookIcon, TwitterIcon, InstagramIcon} from './svg-export';
 
 const Home = () => {
@@ -78,7 +78,7 @@ const Home = () => {
                     </div>
                     <div className="column-color yellow-column-container">
                         <div className="pic-container">
-                            <img src={YellowDog} alt="Yellow dog NFT" width={308} height={280} />
+                            <img src={YellowDogKing} alt="Yellow dog NFT" width={308} height={280} />
                         </div>
                         <h2>
                             F
@@ -87,13 +87,13 @@ const Home = () => {
                     <div className="column-color blue-column-container">
                         <div className="pic-container">
                             <div className="mini-pics">
-                                <img src={GreenDog} alt="Green dog NFT" width={133} height={133} draggable={false}/>
+                                <img src={GreenDogBall} alt="Green dog NFT" width={133} height={133} draggable={false}/>
                             </div>
                             <div className="mini-pics">
-                                <img src={GreenDog} alt="Green dog NFT" width={133} height={133} draggable={false}/>
+                                <img src={GreenDogBall} alt="Green dog NFT" width={133} height={133} draggable={false}/>
                             </div>
                             <div className="mini-pics">
-                                <img src={GreenDog} alt="Green dog NFT" width={133} height={133} draggable={false}/>
+                                <img src={GreenDogBall} alt="Green dog NFT" width={133} height={133} draggable={false}/>
                             </div>
                         </div>
                         <h2>
