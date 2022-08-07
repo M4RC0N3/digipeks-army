@@ -17,6 +17,8 @@
         z-index: 150;
         img{
             transform-origin: 50% 50%;
+            width: 50px;
+            height: auto;
            &:hover{
                 animation: logoRotate 4s linear infinite;
             }

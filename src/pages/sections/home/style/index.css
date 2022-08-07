@@ -19,6 +19,8 @@
 }
 .home-container header img {
   transform-origin: 50% 50%;
+  width: 50px;
+  height: auto;
 }
 .home-container header img:hover {
   -webkit-animation: logoRotate 4s linear infinite;
