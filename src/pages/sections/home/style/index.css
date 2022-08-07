@@ -141,8 +141,8 @@
   left: -1%;
   -webkit-clip-path: inset(10px 666px 10px 10px);
           clip-path: inset(10px 666px 10px 10px);
-  -webkit-animation: TreeMask 2.5s cubic-bezier(0.58, 0.35, 0.44, 1) 4.5s forwards;
-          animation: TreeMask 2.5s cubic-bezier(0.58, 0.35, 0.44, 1) 4.5s forwards;
+  -webkit-animation: TreeMask 3s cubic-bezier(0.58, 0.35, 0.44, 1) 4s forwards;
+          animation: TreeMask 3s cubic-bezier(0.58, 0.35, 0.44, 1) 4s forwards;
 }
 .home-container .welcome-container .coins {
   position: absolute;
@@ -334,6 +334,7 @@
   position: absolute;
   box-sizing: border-box;
   overflow: hidden;
+  pointer-events: none;
   z-index: 0;
 }
 
@@ -432,7 +433,6 @@
 }
 @media only screen and (max-width: 900px) {
   .home-container {
-    min-height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 1fr;
   }
@@ -484,10 +484,6 @@
   .home-container .nft-container .columns-container .column-color h2 {
     font-size: 14rem;
   }
-  .home-container .nft-container .columns-container .column-color .pic-container {
-    width: 85%;
-    padding: 10px;
-  }
   .home-container .nft-container .columns-container .column-color .pic-container .mini-pics {
     width: 75px;
     min-width: 75px;
@@ -529,6 +525,9 @@
   }
 }
 @media only screen and (max-width: 450px) {
+  .home-container .nft-container {
+    min-height: 536px;
+  }
   .home-container .nft-container .container-track {
     width: 250%;
   }
@@ -539,6 +538,9 @@
 @media only screen and (max-width: 392px) {
   .home-container .welcome-container {
     min-height: 333px;
+  }
+  .home-container .nft-container {
+    min-height: 472px;
   }
   .home-container .nft-container .columns-container .column-color h2 {
     font-size: 10rem;

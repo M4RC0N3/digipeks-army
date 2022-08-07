@@ -128,7 +128,6 @@
 }
 @media only screen and(max-width:900px){
     .home-container{
-        min-height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: .2fr 1fr;
         .welcome-container{
@@ -186,8 +185,6 @@
                         font-size: 14rem;
                     }
                     .pic-container{
-                        width: 85%;
-                        padding: 10px;
                         .mini-pics{
                             $minipicsDimesion: 75px;
                             width: $minipicsDimesion;
@@ -257,6 +254,7 @@
                     right: -69%;
                 }
             }
+            min-height: 536px;
         }
     }
 }
@@ -280,6 +278,7 @@
                     right: -75%;
                 }
             }
+            min-height: 472px;
         }
     }
 }
@@ -311,15 +310,6 @@
                 div{
                     right: -82%;
                 }
-            }
-        }
-    }
-}
-@media only screen and(max-width: 305px){
-    .home-container{
-        .nft-container{
-            .container-track{
-
             }
         }
     }
