@@ -139,6 +139,10 @@
   z-index: 0;
   width: 73%;
   left: -1%;
+  -webkit-clip-path: inset(10px 666px 10px 10px);
+          clip-path: inset(10px 666px 10px 10px);
+  -webkit-animation: TreeMask 2.5s cubic-bezier(0.58, 0.35, 0.44, 1) 4.5s forwards;
+          animation: TreeMask 2.5s cubic-bezier(0.58, 0.35, 0.44, 1) 4.5s forwards;
 }
 .home-container .welcome-container .coins {
   position: absolute;
@@ -377,7 +381,7 @@
     font-size: 5rem;
   }
   .home-container .welcome-container .tree {
-    left: -1%;
+    left: -3%;
   }
   .home-container .nft-container .columns-container .column-color {
     min-width: 200px;
@@ -462,6 +466,11 @@
   .home-container .welcome-container .title-container h1 .second-title-container .second-ballon-container {
     right: 25%;
     bottom: -25%;
+  }
+  .home-container .welcome-container .tree {
+    width: 64%;
+    top: -101px;
+    opacity: 0.8;
   }
   .home-container .welcome-container .coins {
     bottom: -775px;
@@ -651,5 +660,25 @@
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes TreeMask {
+  from {
+    -webkit-clip-path: inset(10px 666px 10px 10px);
+            clip-path: inset(10px 666px 10px 10px);
+  }
+  to {
+    -webkit-clip-path: inset(10px 10px 10px 10px);
+            clip-path: inset(10px 10px 10px 10px);
+  }
+}
+@keyframes TreeMask {
+  from {
+    -webkit-clip-path: inset(10px 666px 10px 10px);
+            clip-path: inset(10px 666px 10px 10px);
+  }
+  to {
+    -webkit-clip-path: inset(10px 10px 10px 10px);
+            clip-path: inset(10px 10px 10px 10px);
   }
 }/*# sourceMappingURL=index.css.map */
