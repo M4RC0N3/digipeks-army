@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digipeks-army/static/css/main.cc0e6641.css",
-    "main.js": "/digipeks-army/static/js/main.3705b8fe.js",
+    "main.css": "/digipeks-army/static/css/main.d5ca862e.css",
+    "main.js": "/digipeks-army/static/js/main.75006620.js",
     "static/js/787.6a5df1db.chunk.js": "/digipeks-army/static/js/787.6a5df1db.chunk.js",
     "static/media/background-patern-home.svg": "/digipeks-army/static/media/background-patern-home.d729991c5a0adb96369b.svg",
     "static/media/hero-new-regular.ttf": "/digipeks-army/static/media/hero-new-regular.4f091a00022c50b1150a.ttf",
@@ -13,12 +13,12 @@
     "static/media/coins.svg": "/digipeks-army/static/media/coins.be55a0aa91562e0a15ba93d8047118d9.svg",
     "static/media/chinese-mandala.svg": "/digipeks-army/static/media/chinese-mandala.34f188a740667fe8a79122bab0506d1f.svg",
     "index.html": "/digipeks-army/index.html",
-    "main.cc0e6641.css.map": "/digipeks-army/static/css/main.cc0e6641.css.map",
-    "main.3705b8fe.js.map": "/digipeks-army/static/js/main.3705b8fe.js.map",
+    "main.d5ca862e.css.map": "/digipeks-army/static/css/main.d5ca862e.css.map",
+    "main.75006620.js.map": "/digipeks-army/static/js/main.75006620.js.map",
     "787.6a5df1db.chunk.js.map": "/digipeks-army/static/js/787.6a5df1db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc0e6641.css",
-    "static/js/main.3705b8fe.js"
+    "static/css/main.d5ca862e.css",
+    "static/js/main.75006620.js"
   ]
 }
