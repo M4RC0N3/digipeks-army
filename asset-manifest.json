@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/digipeks-army/static/css/main.a3681bf1.css",
-    "main.js": "/digipeks-army/static/js/main.67e6df78.js",
+    "main.css": "/digipeks-army/static/css/main.68cde35e.css",
+    "main.js": "/digipeks-army/static/js/main.3705b8fe.js",
     "static/js/787.6a5df1db.chunk.js": "/digipeks-army/static/js/787.6a5df1db.chunk.js",
     "static/media/background-patern-home.svg": "/digipeks-army/static/media/background-patern-home.d729991c5a0adb96369b.svg",
     "static/media/Salden-black.otf": "/digipeks-army/static/media/Salden-black.82b58a0ce2096c7a7e26.otf",
     "static/media/digipeks-logo-green.png": "/digipeks-army/static/media/digipeks-logo-green.0bf367836f85ec16fd79.png",
     "static/media/valorant.ttf": "/digipeks-army/static/media/valorant.86ec8370af32018a2391.ttf",
     "static/media/tree.svg": "/digipeks-army/static/media/tree.68ef891c94782ec6c576771b8ec965a4.svg",
+    "static/media/chinese-cloud.svg": "/digipeks-army/static/media/chinese-cloud.c4c343ab9e84a964e0839ddd4972d5aa.svg",
     "static/media/coins.svg": "/digipeks-army/static/media/coins.be55a0aa91562e0a15ba93d8047118d9.svg",
+    "static/media/chinese-mandala.svg": "/digipeks-army/static/media/chinese-mandala.34f188a740667fe8a79122bab0506d1f.svg",
     "index.html": "/digipeks-army/index.html",
-    "main.a3681bf1.css.map": "/digipeks-army/static/css/main.a3681bf1.css.map",
-    "main.67e6df78.js.map": "/digipeks-army/static/js/main.67e6df78.js.map",
+    "main.68cde35e.css.map": "/digipeks-army/static/css/main.68cde35e.css.map",
+    "main.3705b8fe.js.map": "/digipeks-army/static/js/main.3705b8fe.js.map",
     "787.6a5df1db.chunk.js.map": "/digipeks-army/static/js/787.6a5df1db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3681bf1.css",
-    "static/js/main.67e6df78.js"
+    "static/css/main.68cde35e.css",
+    "static/js/main.3705b8fe.js"
   ]
 }
