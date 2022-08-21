@@ -83,6 +83,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 15px;
+  z-index: 200;
 }
 .about-us-container .about-us .pics-container .green-dog-king {
   width: 230px;
