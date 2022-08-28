@@ -147,6 +147,7 @@
         }
         .pic-container{
             width: 100%;
+            max-width: 336px;
             display: flex;
             position: absolute;
             box-sizing: border-box;
@@ -262,7 +263,7 @@
             box-sizing: border-box;
             overflow: hidden;
             pointer-events: none;
-            z-index: 100;
+            z-index: 9;
         }
     }
 }
