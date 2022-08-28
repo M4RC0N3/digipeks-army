@@ -1,25 +1,240 @@
+@import url('../../../../styles/_font-family.scss');
 .join-us-container{
     width: 100%;
-    height: 100vh;
-    background-color: rgb(93, 0, 255);
+    height: auto;
+    background-color: #ECDFC3;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    p{
-        font-family: sans-serif;
-        font-weight: bold;
-        color: #fff;
-        font-size: 3rem;
-        box-sizing: border-box;
-        padding: 0 10px;
+    .chinese-house-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        text-align: center;
-    }
-    .container{
-        width: 60%;
         height: auto;
-        max-width: 600px;
-        margin-top: 40px;
+        position: relative;
+        svg{
+            width: 95%;
+            height: 100%;
+            max-height: 1933px;
+            z-index: 10;
+        }
+        .container-button{
+            width: 40%;
+            height: 10%;
+            max-width: 1024px;
+            max-height: 193px;
+            position: absolute;
+            top: 35.5%;
+            z-index: 20;
+            border-radius: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cut-border-button{
+                width: 100%;
+                height: 100%;
+                border-radius: 200px;
+                overflow: hidden;
+                .join-us-button{
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient(60deg, #F7938A,  #F4CC8B, #5FA8AC);
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 200px;
+                    z-index: 10;
+                    overflow: hidden;
+                }
+            }
+            .opacity-container{
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                border-radius: 200px;
+                opacity: .25;
+                filter: brightness(10px);
+                z-index: 30;
+                pointer-events: none;
+            }
+            p{
+                position: absolute;
+                font-family: "salden-black", sans-serif;
+                color: #ffffff;
+                font-size: 5vw;
+                pointer-events: none;
+                z-index: 100;
+                transition: .3s cubic-bezier(0.39, 0.575, 0.565, 1) .25s;
+            }
+            transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            &:hover{
+                transform: scale(1.08);
+            }
+            &:hover{
+                transform: scale(1.08);
+            }
+            
+            &:hover>p{
+                transform: scale(1.2);
+                margin-bottom: 10%;
+                text-shadow: 0 16px 40px #ffffff66;
+            }
+            .join-us-button:active>p{
+                transform: scale(2);
+            }
+        }
+        .container-button:hover ~ .cloud-container{
+            opacity: 0;
+            animation: houseCloudAnimation 2s linear infinite;
+        }
+        .container-button:hover ~ .house-balloon-container{
+            animation: BalloonAnimation 1s cubic-bezier( 0.37, 0.29, 0.14, 0.94 ) infinite;
+        }
+        .how-to-buy-container{
+            position: absolute;
+            width: fit-content;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 20;
+            li{
+                font-family: "hero-new-regular", sans-serif;
+                color: #16393B;
+                font-size: 1.6vw;
+                margin: 2% 0;
+            }
+        }
+        .cloud-container{
+            position: absolute;
+            z-index: 0;
+            box-sizing: border-box;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        @mixin HouseCloudAnimation($initX, $endX, $delay){
+            opacity: 0;
+            @keyframes houseCloudAnimation {
+                0%{
+                    transform: translateX($initX);
+                }
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                    transform: translateX($endX);
+                }
+            }
+            animation: houseCloudAnimation 20s linear $delay infinite;
+        }
+        .left-little{
+            left: 0;
+            top: 36%;
+            height: 10%;
+            width: 70%;
+            img{
+                transform: translateX(-39%);
+                @include HouseCloudAnimation( $initX: -39%, $endX: 36%, $delay:5s);
+            }
+        }
+        .left{
+            left: 9%;
+            top: -4%;
+            width: 40%;
+            height: 11%;
+            img{
+                transform: translateX(-26%);
+                @include HouseCloudAnimation($initX: -26%, $endX:26%, $delay:.1s );
+            }
+        }
+        .mid{
+            width: 39%;
+            height: 5%;
+            left: 49%;
+            top: -5%;
+            img{
+                transform: translateX(-39%);
+                @include HouseCloudAnimation($initX: -39%, $endX:39% , $delay: 3s);
+            }
+        }
+        .right{
+            width: 28%;
+            left: 71%;
+            top: 7%;
+            height: 9%;
+            img{
+                transform: translateX(-22%);
+                @include HouseCloudAnimation($initX: -22%, $endX: 22%, $delay: 2s);
+            }
+        }
+        .right-little{
+            width: 22%;
+            height: 5%;
+            left: 77%;
+            top: 49%;
+            img{
+                transform: translateX(-31%);
+                @include HouseCloudAnimation($initX:-31%, $endX: 31%, $delay: 4s);
+            }
+        }
+        .house-balloon-container{
+            width: 8%;
+            height: auto;
+            position: absolute;
+            box-sizing: border-box;
+            transform-origin: 50% 0;
+            animation: BalloonAnimation 7s cubic-bezier( 0.37, 0.29, 0.14, 0.94 ) infinite;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .chinese-tree-right{
+            width: 44%;
+            height: 44%;
+            position: absolute;
+            transform: scaleX(-1);
+            right: 0;
+            top: 6%;
+        }
+        .chinese-tree-left{
+            width: 40%;
+            height: 27%;
+            position: absolute;
+            left: 0;
+            top: 51%;
+        }
+        .top-left{
+            left: 10%;
+            top: 24%;
+        }
+        .down-left{
+            left: 2.4%;
+            top: 60%;
+        }
+        .top-right{
+            right: 10%;
+            top: 24%;
+        }
+        .down-right{
+            right: 1.4%;
+            top: 60%;
+        }
+    }
+}
+@keyframes BalloonAnimation{
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(10deg);
     }
 }

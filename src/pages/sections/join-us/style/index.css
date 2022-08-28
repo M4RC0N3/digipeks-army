@@ -1,25 +1,323 @@
+@import url("../../../../styles/_font-family.scss");
 .join-us-container {
   width: 100%;
-  height: 100vh;
-  background-color: rgb(93, 0, 255);
+  height: auto;
+  background-color: #ECDFC3;
+  display: flex;
+  justify-content: center;
+}
+.join-us-container .chinese-house-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.join-us-container .chinese-house-container svg {
+  width: 95%;
+  height: 100%;
+  max-height: 1933px;
+  z-index: 10;
+}
+.join-us-container .chinese-house-container .container-button {
+  width: 40%;
+  height: 10%;
+  max-width: 1024px;
+  max-height: 193px;
+  position: absolute;
+  top: 35.5%;
+  z-index: 20;
+  border-radius: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-.join-us-container p {
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #fff;
-  font-size: 3rem;
-  box-sizing: border-box;
-  padding: 0 10px;
+.join-us-container .chinese-house-container .container-button .cut-border-button {
   width: 100%;
-  text-align: center;
+  height: 100%;
+  border-radius: 200px;
+  overflow: hidden;
 }
-.join-us-container .container {
-  width: 60%;
+.join-us-container .chinese-house-container .container-button .cut-border-button .join-us-button {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(60deg, #F7938A, #F4CC8B, #5FA8AC);
+  cursor: pointer;
+  border: none;
+  border-radius: 200px;
+  z-index: 10;
+  overflow: hidden;
+}
+.join-us-container .chinese-house-container .container-button .opacity-container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 200px;
+  opacity: 0.25;
+  filter: brightness(10px);
+  z-index: 30;
+  pointer-events: none;
+}
+.join-us-container .chinese-house-container .container-button p {
+  position: absolute;
+  font-family: "salden-black", sans-serif;
+  color: #ffffff;
+  font-size: 5vw;
+  pointer-events: none;
+  z-index: 100;
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0.25s;
+}
+.join-us-container .chinese-house-container .container-button:hover {
+  transform: scale(1.08);
+}
+.join-us-container .chinese-house-container .container-button:hover {
+  transform: scale(1.08);
+}
+.join-us-container .chinese-house-container .container-button:hover > p {
+  transform: scale(1.2);
+  margin-bottom: 10%;
+  text-shadow: 0 16px 40px rgba(255, 255, 255, 0.4);
+}
+.join-us-container .chinese-house-container .container-button .join-us-button:active > p {
+  transform: scale(2);
+}
+.join-us-container .chinese-house-container .container-button:hover ~ .cloud-container {
+  opacity: 0;
+  -webkit-animation: houseCloudAnimation 2s linear infinite;
+          animation: houseCloudAnimation 2s linear infinite;
+}
+.join-us-container .chinese-house-container .container-button:hover ~ .house-balloon-container {
+  -webkit-animation: BalloonAnimation 1s cubic-bezier(0.37, 0.29, 0.14, 0.94) infinite;
+          animation: BalloonAnimation 1s cubic-bezier(0.37, 0.29, 0.14, 0.94) infinite;
+}
+.join-us-container .chinese-house-container .how-to-buy-container {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: auto;
-  max-width: 600px;
-  margin-top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 20;
+}
+.join-us-container .chinese-house-container .how-to-buy-container li {
+  font-family: "hero-new-regular", sans-serif;
+  color: #16393B;
+  font-size: 1.6vw;
+  margin: 2% 0;
+}
+.join-us-container .chinese-house-container .cloud-container {
+  position: absolute;
+  z-index: 0;
+  box-sizing: border-box;
+}
+.join-us-container .chinese-house-container .cloud-container img {
+  width: 100%;
+  height: 100%;
+}
+.join-us-container .chinese-house-container .left-little {
+  left: 0;
+  top: 36%;
+  height: 10%;
+  width: 70%;
+}
+.join-us-container .chinese-house-container .left-little img {
+  transform: translateX(-39%);
+  opacity: 0;
+  -webkit-animation: houseCloudAnimation 20s linear 5s infinite;
+          animation: houseCloudAnimation 20s linear 5s infinite;
+}
+@-webkit-keyframes houseCloudAnimation {
+  0% {
+    transform: translateX(-39%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(36%);
+  }
+}
+@keyframes houseCloudAnimation {
+  0% {
+    transform: translateX(-39%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(36%);
+  }
+}
+.join-us-container .chinese-house-container .left {
+  left: 9%;
+  top: -4%;
+  width: 40%;
+  height: 11%;
+}
+.join-us-container .chinese-house-container .left img {
+  transform: translateX(-26%);
+  opacity: 0;
+  -webkit-animation: houseCloudAnimation 20s linear 0.1s infinite;
+          animation: houseCloudAnimation 20s linear 0.1s infinite;
+}
+@keyframes houseCloudAnimation {
+  0% {
+    transform: translateX(-26%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(26%);
+  }
+}
+.join-us-container .chinese-house-container .mid {
+  width: 39%;
+  height: 5%;
+  left: 49%;
+  top: -5%;
+}
+.join-us-container .chinese-house-container .mid img {
+  transform: translateX(-39%);
+  opacity: 0;
+  -webkit-animation: houseCloudAnimation 20s linear 3s infinite;
+          animation: houseCloudAnimation 20s linear 3s infinite;
+}
+@keyframes houseCloudAnimation {
+  0% {
+    transform: translateX(-39%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(39%);
+  }
+}
+.join-us-container .chinese-house-container .right {
+  width: 28%;
+  left: 71%;
+  top: 7%;
+  height: 9%;
+}
+.join-us-container .chinese-house-container .right img {
+  transform: translateX(-22%);
+  opacity: 0;
+  -webkit-animation: houseCloudAnimation 20s linear 2s infinite;
+          animation: houseCloudAnimation 20s linear 2s infinite;
+}
+@keyframes houseCloudAnimation {
+  0% {
+    transform: translateX(-22%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(22%);
+  }
+}
+.join-us-container .chinese-house-container .right-little {
+  width: 22%;
+  height: 5%;
+  left: 77%;
+  top: 49%;
+}
+.join-us-container .chinese-house-container .right-little img {
+  transform: translateX(-31%);
+  opacity: 0;
+  -webkit-animation: houseCloudAnimation 20s linear 4s infinite;
+          animation: houseCloudAnimation 20s linear 4s infinite;
+}
+@keyframes houseCloudAnimation {
+  0% {
+    transform: translateX(-31%);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(31%);
+  }
+}
+.join-us-container .chinese-house-container .house-balloon-container {
+  width: 8%;
+  height: auto;
+  position: absolute;
+  box-sizing: border-box;
+  transform-origin: 50% 0;
+  -webkit-animation: BalloonAnimation 7s cubic-bezier(0.37, 0.29, 0.14, 0.94) infinite;
+          animation: BalloonAnimation 7s cubic-bezier(0.37, 0.29, 0.14, 0.94) infinite;
+}
+.join-us-container .chinese-house-container .house-balloon-container img {
+  width: 100%;
+  height: 100%;
+}
+.join-us-container .chinese-house-container .chinese-tree-right {
+  width: 44%;
+  height: 44%;
+  position: absolute;
+  transform: scaleX(-1);
+  right: 0;
+  top: 6%;
+}
+.join-us-container .chinese-house-container .chinese-tree-left {
+  width: 40%;
+  height: 27%;
+  position: absolute;
+  left: 0;
+  top: 51%;
+}
+.join-us-container .chinese-house-container .top-left {
+  left: 10%;
+  top: 24%;
+}
+.join-us-container .chinese-house-container .down-left {
+  left: 2.4%;
+  top: 60%;
+}
+.join-us-container .chinese-house-container .top-right {
+  right: 10%;
+  top: 24%;
+}
+.join-us-container .chinese-house-container .down-right {
+  right: 1.4%;
+  top: 60%;
+}
+
+@-webkit-keyframes BalloonAnimation {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes BalloonAnimation {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
 }/*# sourceMappingURL=index.css.map */
