@@ -26,11 +26,9 @@ const Index =()=>{
             const windowTop = window.pageYOffset + ((window.innerHeight)/2);
             const textAbout = textAboutRef.current.getBoundingClientRect().top-200;
             const diagram = diagramRef.current.getBoundingClientRect().top+500;
-            console.log(dataPic);
             if(windowTop>textAbout){
                 textAboutRef.current.classList.add('animate');
                 dataPic.forEach((element)=>{
-                    console.log(element)
                     element.classList.add('anime');
                 });
             }

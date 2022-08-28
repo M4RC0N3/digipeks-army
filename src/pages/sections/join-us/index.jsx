@@ -11,7 +11,7 @@ const JoinUs=()=>{
             <div className="chinese-house-container">
                 <div className="container-button">
                     <div className="cut-border-button">
-                        <button className="join-us-button" onClick={()=>{console.log('teste');}}></button>
+                        <button className="join-us-button"></button>
                     </div>
                     <p>JOIN US</p>
                 </div>
