@@ -1,25 +1,221 @@
 .roadmap-us-container{
     width: 100%;
-    height: 100vh;
-    background-color: rgb(93, 0, 255);
+    height: 1045px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    p{
-        font-family: sans-serif;
-        font-weight: bold;
-        color: #fff;
-        font-size: 3rem;
-        box-sizing: border-box;
-        padding: 0 10px;
-        width: 100%;
-        text-align: center;
-    }
-    .container{
-        width: 60%;
+    background: #16393B;
+    background-image: url('../../../../assets/images/pattern-green-background.svg');
+    background-image:url('../../../../assets/images/pattern-green-background.svg'), radial-gradient(#275457, #16393B);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .title-container{
+        width: fit-content;
         height: auto;
-        max-width: 600px;
-        margin-top: 40px;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        top: 95px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 30;
+        h2{
+            font-family: "salden-black", sans-serif;
+            color: #fff;
+            font-size: 6rem;
+            position: absolute;
+            z-index: 1;
+        }
+        img{ 
+            max-width: 740px;
+            height: auto;
+        }
+    }
+    
+    .top-bamboo-container{
+        width: 100%;
+        height: 211px;
+        overflow: hidden;
+        top: -47px;
+        position: absolute;
+        z-index: 35;
+        .top-bamboo{
+            position: absolute;
+            top: -447px;
+            left: 394px;
+            transform: rotate(270deg);
+        }
+        .top-bamboo-complement{
+            left: 1495px;
+            transform: rotate(270deg);
+        }
+        .top-bamboo-complement2{
+            left: 2594px;
+            transform: rotate(270deg);
+        }
+    }
+    .background-bamboos-container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img{
+            position: absolute;
+            height: 100%;
+        }
+        .left-total-bamboo{
+            transform: rotateZ(-176deg);
+            left: 0;
+        }
+        .left-bamboo{
+            transform: rotateZ(355deg);
+            left: 230px;
+        }
+        .right-bamboo{
+            transform: rotate(-4deg) scaleX(-1);
+            right: 208px;
+        }
+        .right-total-bamboo{
+            transform: scaleX(-1);
+            right: 18px;
+        }
+    }
+    .chinese-wall-container{
+        background-color: #615c9a;
+        height: 100vh;
+        width: 1856px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        bottom: 0;
+        .tower-container{
+            width: 259px;
+            height: 304px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 100%;
+                height: auto;
+                z-index: 5;
+                position: absolute;
+            }
+            .flag-container{
+                position: absolute;
+                bottom: 7px;
+                width: 100%;
+                height: 62%;
+                display: flex;
+                justify-content: center;
+                .flag{
+                    position: absolute;
+                    width: 89%;
+                    height: 100%;
+                    border-radius: 10px;
+                    background-color: #C21B15;
+                    z-index: 10;
+                    display: grid;
+                    grid-template-rows: .3fr 1fr;
+                    box-sizing: border-box;
+                    padding: 0 8px;
+                    h3{
+                        align-self: center;
+                        text-align: center;
+                        font-family: "hero-new-regular", sans-serif;
+                        color: #F7E227;
+                        font-size: 1.6rem;
+                    }
+                    p{
+                        text-align: justify;
+                        font-family: "hero-new-regular", sans-serif;
+                        color: #F7E227;
+                        line-height: 20px;
+                        font-size: .9rem;
+                    }
+                }
+                &::before{
+                    content: " ";
+                    position: absolute;
+                    width: 93%;
+                    height: 10px;
+                    top: 10px;
+                    background-color: #F7E227;
+                    z-index: 7;
+                }
+            }
+        }
+        .walls{
+            position: absolute;
+        }
+        .wall1{
+            bottom: 9px;
+            left: 280px;
+            rotate: 354deg;
+        }
+        .wall2{
+            left: 868px;
+            bottom: 25px;
+        }
+        .wall3{
+            left: 1291px;
+            bottom: 91px;
+            rotate: 336deg;
+            z-index: 10;
+        }
+        .wall4{
+            left: 1299px;
+            bottom: 247px;
+            rotate: 27deg;
+        }
+        .wall4-2{
+            left: 1030px;
+            bottom: 383px;
+            rotate: 27deg;
+        }
+        .wall5{
+            left: 615px;
+            bottom: 367px;
+        }
+        .wall6{
+            left: 318px;
+            bottom: 367px;
+        }
+        .no-flag1{
+            bottom: -35px;
+            left: 40px;
+        }
+        .no-flag2{
+            bottom: 25px;
+            left: 1090px;
+            z-index: 15;
+        }
+        .no-flag3{
+            bottom: 367px;
+            left: 494px;
+            z-index: 15;
+        }
+        .flag-level1{
+            bottom: 25px;
+            left: 616px;
+        }
+        .flag-level2{
+            bottom: 139px;
+            left: 1591px;
+            z-index: 15;
+        }
+        .flag-level3{
+            left: 968px;
+            bottom: 366px;
+        }
+        .flag-level4{
+            left: 118px;
+            bottom: 366px;
+        }
     }
 }
+@import './responsive';

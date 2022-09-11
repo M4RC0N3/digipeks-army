@@ -1,25 +1,487 @@
 .roadmap-us-container {
   width: 100%;
-  height: 100vh;
-  background-color: rgb(93, 0, 255);
+  height: 1045px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #16393B;
+  background-image: url("../../../../assets/images/pattern-green-background.svg");
+  background-image: url("../../../../assets/images/pattern-green-background.svg"), radial-gradient(#275457, #16393B);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.roadmap-us-container .title-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  top: 95px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  position: absolute;
+  z-index: 30;
 }
-.roadmap-us-container p {
-  font-family: sans-serif;
-  font-weight: bold;
+.roadmap-us-container .title-container h2 {
+  font-family: "salden-black", sans-serif;
   color: #fff;
-  font-size: 3rem;
-  box-sizing: border-box;
-  padding: 0 10px;
-  width: 100%;
-  text-align: center;
+  font-size: 6rem;
+  position: absolute;
+  z-index: 1;
 }
-.roadmap-us-container .container {
-  width: 60%;
+.roadmap-us-container .title-container img {
+  max-width: 740px;
   height: auto;
-  max-width: 600px;
-  margin-top: 40px;
+}
+.roadmap-us-container .top-bamboo-container {
+  width: 100%;
+  height: 211px;
+  overflow: hidden;
+  top: -47px;
+  position: absolute;
+  z-index: 35;
+}
+.roadmap-us-container .top-bamboo-container .top-bamboo {
+  position: absolute;
+  top: -447px;
+  left: 394px;
+  transform: rotate(270deg);
+}
+.roadmap-us-container .top-bamboo-container .top-bamboo-complement {
+  left: 1495px;
+  transform: rotate(270deg);
+}
+.roadmap-us-container .top-bamboo-container .top-bamboo-complement2 {
+  left: 2594px;
+  transform: rotate(270deg);
+}
+.roadmap-us-container .background-bamboos-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.roadmap-us-container .background-bamboos-container img {
+  position: absolute;
+  height: 100%;
+}
+.roadmap-us-container .background-bamboos-container .left-total-bamboo {
+  transform: rotateZ(-176deg);
+  left: 0;
+}
+.roadmap-us-container .background-bamboos-container .left-bamboo {
+  transform: rotateZ(355deg);
+  left: 230px;
+}
+.roadmap-us-container .background-bamboos-container .right-bamboo {
+  transform: rotate(-4deg) scaleX(-1);
+  right: 208px;
+}
+.roadmap-us-container .background-bamboos-container .right-total-bamboo {
+  transform: scaleX(-1);
+  right: 18px;
+}
+.roadmap-us-container .chinese-wall-container {
+  background-color: #615c9a;
+  height: 100vh;
+  width: 1856px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  bottom: 0;
+}
+.roadmap-us-container .chinese-wall-container .tower-container {
+  width: 259px;
+  height: 304px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.roadmap-us-container .chinese-wall-container .tower-container img {
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  position: absolute;
+}
+.roadmap-us-container .chinese-wall-container .tower-container .flag-container {
+  position: absolute;
+  bottom: 7px;
+  width: 100%;
+  height: 62%;
+  display: flex;
+  justify-content: center;
+}
+.roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag {
+  position: absolute;
+  width: 89%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #C21B15;
+  z-index: 10;
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+.roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag h3 {
+  align-self: center;
+  text-align: center;
+  font-family: "hero-new-regular", sans-serif;
+  color: #F7E227;
+  font-size: 1.6rem;
+}
+.roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag p {
+  text-align: justify;
+  font-family: "hero-new-regular", sans-serif;
+  color: #F7E227;
+  line-height: 20px;
+  font-size: 0.9rem;
+}
+.roadmap-us-container .chinese-wall-container .tower-container .flag-container::before {
+  content: " ";
+  position: absolute;
+  width: 93%;
+  height: 10px;
+  top: 10px;
+  background-color: #F7E227;
+  z-index: 7;
+}
+.roadmap-us-container .chinese-wall-container .walls {
+  position: absolute;
+}
+.roadmap-us-container .chinese-wall-container .wall1 {
+  bottom: 9px;
+  left: 280px;
+  rotate: 354deg;
+}
+.roadmap-us-container .chinese-wall-container .wall2 {
+  left: 868px;
+  bottom: 25px;
+}
+.roadmap-us-container .chinese-wall-container .wall3 {
+  left: 1291px;
+  bottom: 91px;
+  rotate: 336deg;
+  z-index: 10;
+}
+.roadmap-us-container .chinese-wall-container .wall4 {
+  left: 1299px;
+  bottom: 247px;
+  rotate: 27deg;
+}
+.roadmap-us-container .chinese-wall-container .wall4-2 {
+  left: 1030px;
+  bottom: 383px;
+  rotate: 27deg;
+}
+.roadmap-us-container .chinese-wall-container .wall5 {
+  left: 615px;
+  bottom: 367px;
+}
+.roadmap-us-container .chinese-wall-container .wall6 {
+  left: 318px;
+  bottom: 367px;
+}
+.roadmap-us-container .chinese-wall-container .no-flag1 {
+  bottom: -35px;
+  left: 40px;
+}
+.roadmap-us-container .chinese-wall-container .no-flag2 {
+  bottom: 25px;
+  left: 1090px;
+  z-index: 15;
+}
+.roadmap-us-container .chinese-wall-container .no-flag3 {
+  bottom: 367px;
+  left: 494px;
+  z-index: 15;
+}
+.roadmap-us-container .chinese-wall-container .flag-level1 {
+  bottom: 25px;
+  left: 616px;
+}
+.roadmap-us-container .chinese-wall-container .flag-level2 {
+  bottom: 139px;
+  left: 1591px;
+  z-index: 15;
+}
+.roadmap-us-container .chinese-wall-container .flag-level3 {
+  left: 968px;
+  bottom: 366px;
+}
+.roadmap-us-container .chinese-wall-container .flag-level4 {
+  left: 118px;
+  bottom: 366px;
+}
+
+@media only screen and (max-width: 1860px) {
+  .roadmap-us-container .chinese-wall-container {
+    width: 1440px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall1 {
+    bottom: -19px;
+    left: 14px;
+    rotate: 341deg;
+  }
+  .roadmap-us-container .chinese-wall-container .wall2 {
+    left: 580px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall3 {
+    left: 879px;
+    bottom: 89px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall4 {
+    left: 908px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall4-2 {
+    left: 804px;
+    bottom: 300px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall5 {
+    left: 499px;
+    bottom: 344px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall6 {
+    left: 144px;
+    bottom: 344px;
+  }
+  .roadmap-us-container .chinese-wall-container .no-flag1 {
+    left: 0;
+  }
+  .roadmap-us-container .chinese-wall-container .no-flag2 {
+    left: 686px;
+  }
+  .roadmap-us-container .chinese-wall-container .no-flag3 {
+    left: 320px;
+    bottom: 344px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level1 {
+    left: 329px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level2 {
+    left: initial;
+    right: 0;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level3 {
+    left: 625px;
+    bottom: 344px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level4 {
+    left: 23px;
+    bottom: 344px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .roadmap-us-container .chinese-wall-container {
+    width: 1024px;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container {
+    width: 224px;
+    height: 263px;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag h3 {
+    font-size: 1.4rem;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag p {
+    font-size: 0.8rem;
+  }
+  .roadmap-us-container .chinese-wall-container .walls {
+    width: 296px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .roadmap-us-container {
+    height: 990px;
+  }
+  .roadmap-us-container .title-container {
+    z-index: 32;
+  }
+  .roadmap-us-container .title-container img {
+    width: 92%;
+  }
+  .roadmap-us-container .title-container h2 {
+    font-size: 5rem;
+  }
+  .roadmap-us-container .top-bamboo-container {
+    rotate: 180deg;
+  }
+  .roadmap-us-container .top-bamboo-container .top-bamboo {
+    top: -442px;
+    width: 25%;
+    left: 44%;
+  }
+  .roadmap-us-container .background-bamboos-container {
+    z-index: 30;
+  }
+  .roadmap-us-container .background-bamboos-container .left-bamboo, .roadmap-us-container .background-bamboos-container .right-bamboo {
+    display: none;
+  }
+  .roadmap-us-container .background-bamboos-container .left-total-bamboo {
+    transform: rotateZ(355deg);
+    left: -23px;
+  }
+  .roadmap-us-container .background-bamboos-container .right-total-bamboo {
+    transform: scaleX(1) rotateZ(4deg);
+    right: -71px;
+  }
+  .roadmap-us-container .chinese-wall-container {
+    max-width: 580px;
+    z-index: 35;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container {
+    width: 199px;
+    height: 254px;
+    bottom: 0;
+    z-index: 25;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container img {
+    width: 100%;
+    height: auto;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container .flag-container {
+    bottom: 27px;
+    height: 65%;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag h3 {
+    font-size: 1rem;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag p {
+    font-size: 0.7rem;
+  }
+  .roadmap-us-container .chinese-wall-container .no-flag1, .roadmap-us-container .chinese-wall-container .no-flag2, .roadmap-us-container .chinese-wall-container .no-flag3 {
+    display: none;
+  }
+  .roadmap-us-container .chinese-wall-container .wall2 .wall3, .roadmap-us-container .chinese-wall-container .wall4, .roadmap-us-container .chinese-wall-container .wall4-2 {
+    display: none;
+  }
+  .roadmap-us-container .chinese-wall-container .walls {
+    width: 318px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall1 {
+    rotate: -25deg;
+    bottom: 380px;
+    left: 152px;
+    z-index: 20;
+  }
+  .roadmap-us-container .chinese-wall-container .wall5 {
+    rotate: 41deg;
+    left: 121px;
+    bottom: 269px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall6 {
+    rotate: -31deg;
+    left: 134px;
+    bottom: 56px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level1 {
+    left: initial;
+    right: 1%;
+    bottom: 393px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level2 {
+    left: 1%;
+    bottom: 308px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level3 {
+    left: initial;
+    right: 1%;
+    bottom: 84px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level4 {
+    left: 1%;
+    bottom: -21px;
+  }
+}
+@media only screen and (max-width: 635px) {
+  .roadmap-us-container .title-container {
+    top: 75px;
+  }
+  .roadmap-us-container .title-container img {
+    width: 92%;
+  }
+  .roadmap-us-container .title-container h2 {
+    font-size: 4rem;
+  }
+  .roadmap-us-container .top-bamboo-container {
+    top: -58px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .roadmap-us-container {
+    height: 1302px;
+  }
+  .roadmap-us-container .chinese-wall-container {
+    max-width: 420px;
+    height: 1035px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container {
+    position: relative;
+    width: 199px;
+    height: 242px;
+    right: initial;
+    left: initial;
+    bottom: initial;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container .flag-container {
+    bottom: 16px;
+    height: 71%;
+  }
+  .roadmap-us-container .chinese-wall-container .walls {
+    width: 270px;
+    display: none;
+  }
+  .roadmap-us-container .background-bamboos-container img {
+    width: 279px;
+  }
+  .roadmap-us-container .background-bamboos-container .left-total-bamboo {
+    transform: rotateZ(0deg);
+    left: 0;
+  }
+  .roadmap-us-container .background-bamboos-container .right-total-bamboo {
+    transform: rotateZ(0deg);
+    right: 0;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .roadmap-us-container .title-container img {
+    width: 92%;
+  }
+  .roadmap-us-container .title-container h2 {
+    font-size: 3rem;
+  }
+}
+/* @media only screen and(max-width:425px){
+    .roadmap-us-container{
+        .chinese-wall-container{
+            .tower-container{
+                width: 181px;
+                height: 285px;
+                .flag-container{
+                    bottom: 37px;
+                    height: 55%;
+                }
+            }
+            .wall6{
+                width: 263px;
+            }
+        }
+    }
+} */
+@media only screen and (max-width: 380px) {
+  .roadmap-us-container .title-container img {
+    width: 92%;
+  }
+  .roadmap-us-container .title-container h2 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=index.css.map */

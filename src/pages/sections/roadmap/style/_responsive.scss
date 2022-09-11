@@ -1,0 +1,287 @@
+@media only screen and(max-width: 1860px){
+    .roadmap-us-container{
+        .chinese-wall-container{
+            width: 1440px;
+            .wall1{
+                bottom: -19px;
+                left: 14px;
+                rotate: 341deg;
+            }
+            .wall2{
+                left: 580px;
+            }
+            .wall3{
+                left: 879px;
+                bottom: 89px;
+            }
+            .wall4{
+                left: 908px;
+            }
+            .wall4-2{
+                left: 804px;
+                bottom: 300px;
+            }
+            .wall5{
+                left: 499px;
+                bottom: 344px;
+            }
+            .wall6{
+                left: 144px;
+                bottom: 344px;
+            }
+            .no-flag1{
+                left: 0;
+            }
+            .no-flag2{
+                left: 686px;
+            }
+            .no-flag3{
+                left: 320px;
+                bottom: 344px;
+            }
+            .flag-level1{
+                left: 329px;
+            }
+            .flag-level2{
+                left: initial;
+                right: 0;
+            }
+            .flag-level3{
+                left: 625px;
+                bottom: 344px;
+            }
+            .flag-level4{
+                left: 23px;
+                bottom: 344px;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 1440px){
+    .roadmap-us-container{
+        .chinese-wall-container{
+            width: 1024px;
+            .tower-container{
+                width: 224px;
+                height: 263px;
+                .flag-container{
+                    .flag{
+                        h3{
+                            font-size: 1.4rem;
+                        }
+                        p{
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+            .walls{
+                width: 296px;
+            }
+        }
+    }
+}
+@media only screen and(max-width:900px){
+    .roadmap-us-container{
+        height: 990px;
+        .title-container{
+            z-index: 32;
+            img{
+                width: 92%;
+            }
+            h2{
+                font-size: 5rem;
+            }
+        }
+        .top-bamboo-container{
+            rotate: 180deg;
+            .top-bamboo{
+                top: -442px;
+                width: 25%;
+                left: 44%;
+            }
+        }
+        .background-bamboos-container{
+            z-index: 30;
+            .left-bamboo, .right-bamboo{
+                display: none;
+            }
+            .left-total-bamboo{
+                transform: rotateZ(355deg);
+                    left: -23px;
+            }
+            .right-total-bamboo{
+                transform: scaleX(1) rotateZ(4deg);
+                right: -71px;
+            }
+        }
+        .chinese-wall-container{
+            max-width: 580px;
+            z-index: 35;
+            .tower-container{
+                width: 199px;
+                height: 254px;
+                bottom: 0;
+                z-index: 25;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                .flag-container{
+                    bottom: 27px;
+                    height: 65%;
+                    .flag{
+                        h3{
+                            font-size: 1rem;
+                        }
+                        p{
+                            font-size: .7rem;
+                        }
+                    }
+                }
+            }
+            .no-flag1, .no-flag2, .no-flag3{
+                display: none;
+            }
+            .wall2 .wall3, .wall4, .wall4-2{
+                display: none;
+            }
+            .walls{
+                width: 318px;
+            }
+            .wall1{
+                rotate: -25deg;
+                bottom: 380px;
+                left: 152px;
+                z-index: 20;
+            }
+            .wall5{
+                rotate: 41deg;
+                left: 121px;
+                bottom: 269px;
+            }
+            .wall6{
+                rotate: -31deg;
+                left: 134px;
+                bottom: 56px;
+            }
+            .flag-level1{
+                left: initial;
+                right: 1%;
+                bottom: 393px;
+            }
+            .flag-level2{
+                left: 1%;
+                bottom: 308px;
+            }
+            .flag-level3{
+                left: initial;
+                right: 1%;
+                bottom: 84px;
+            }
+            .flag-level4{
+                left: 1%;
+                bottom: -21px;
+            }
+        }
+    }
+}
+@media only screen and(max-width:635px){
+    .roadmap-us-container{
+        .title-container{
+            top: 75px;
+            img{
+                width: 92%;
+            }
+            h2{
+                font-size: 4rem;
+            }
+        }
+        .top-bamboo-container{
+            top: -58px;
+        }
+    }
+}
+@media  only screen and(max-width:580px){
+    .roadmap-us-container{
+        height: 1302px;
+        .chinese-wall-container{
+            max-width: 420px;
+            height: 1035px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            .tower-container{
+                position: relative;
+                width: 199px;
+                height: 242px;
+                right: initial;
+                left: initial;
+                bottom: initial;
+                .flag-container{
+                    bottom: 16px;
+                    height: 71%;
+                }
+            }
+            .walls{
+                width: 270px;
+                display: none;
+            }
+        }
+        .background-bamboos-container{
+            img{
+                width: 279px;
+            }
+            .left-total-bamboo{
+                transform: rotateZ( 0deg);
+                left: 0;
+            }
+            .right-total-bamboo{
+                transform: rotateZ( 0deg);
+                right: 0;
+            }
+        }
+    }
+}
+@media only screen and(max-width:505px){
+    .roadmap-us-container{
+        .title-container{
+            img{
+                width: 92%;
+            }
+            h2{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+/* @media only screen and(max-width:425px){
+    .roadmap-us-container{
+        .chinese-wall-container{
+            .tower-container{
+                width: 181px;
+                height: 285px;
+                .flag-container{
+                    bottom: 37px;
+                    height: 55%;
+                }
+            }
+            .wall6{
+                width: 263px;
+            }
+        }
+    }
+} */
+@media only screen and(max-width:380px){
+    .roadmap-us-container{
+        .title-container{
+            img{
+                width: 92%;
+            }
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+}
