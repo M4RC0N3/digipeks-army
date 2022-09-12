@@ -59,12 +59,14 @@
 }
 @media only screen and(max-width: 1440px){
     .roadmap-us-container{
+        height: 867px;
         .chinese-wall-container{
             width: 1024px;
             .tower-container{
-                width: 224px;
-                height: 263px;
+                width: 212px;
+                height: 251px;
                 .flag-container{
+                    height: 63%;
                     .flag{
                         h3{
                             font-size: 1.4rem;
@@ -75,13 +77,64 @@
                     }
                 }
             }
+            .no-flag2{
+                left: 503px;
+                bottom: 19px;
+            }
+            .no-flag3{
+                display: none;
+            }
             .walls{
-                width: 296px;
+                width: 280px;
+            }
+            .wall1{
+                width: 265px;
+                rotate: -40deg;
+                bottom: 28px;
+                left: 132px;
+            }
+            .wall2{
+                left: 375px;
+                bottom: 2px;
+                rotate: 0;
+            }
+            .wall3{
+                left: 661px;
+                rotate: 331deg;
+                bottom: 60px;
+            }
+            .wall4{
+                left: 554px;
+                bottom: 187px;
+            }
+            .wall4-2{
+                left: 475px;
+                bottom: 227px;
+            }
+            .wall5{
+                display: none;
+            }
+            .wall6{
+                bottom: 258px;
+            }
+            .flag-level1{
+                left: 246px;
+                bottom: 19px;
+            }
+            .flag-level2{
+                bottom: 79px;
+            }
+            .flag-level3{
+                left: 339px;
+                bottom: 274px;
+            }
+            .flag-level4{
+                bottom: 273px;
             }
         }
     }
 }
-@media only screen and(max-width:900px){
+@media only screen and(max-width:1024px){
     .roadmap-us-container{
         height: 990px;
         .title-container{
@@ -143,7 +196,7 @@
             .no-flag1, .no-flag2, .no-flag3{
                 display: none;
             }
-            .wall2 .wall3, .wall4, .wall4-2{
+            .wall3, .wall4, .wall4-2{
                 display: none;
             }
             .walls{
@@ -155,10 +208,14 @@
                 left: 152px;
                 z-index: 20;
             }
+            .wall2{
+                display: none;
+            }
             .wall5{
                 rotate: 41deg;
                 left: 121px;
                 bottom: 269px;
+                display: block;
             }
             .wall6{
                 rotate: -31deg;

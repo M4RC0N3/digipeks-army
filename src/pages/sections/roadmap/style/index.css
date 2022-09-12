@@ -87,8 +87,7 @@
   right: 18px;
 }
 .roadmap-us-container .chinese-wall-container {
-  background-color: #615c9a;
-  height: 100vh;
+  height: 100%;
   width: 1856px;
   position: absolute;
   left: 50%;
@@ -278,12 +277,18 @@
   }
 }
 @media only screen and (max-width: 1440px) {
+  .roadmap-us-container {
+    height: 867px;
+  }
   .roadmap-us-container .chinese-wall-container {
     width: 1024px;
   }
   .roadmap-us-container .chinese-wall-container .tower-container {
-    width: 224px;
-    height: 263px;
+    width: 212px;
+    height: 251px;
+  }
+  .roadmap-us-container .chinese-wall-container .tower-container .flag-container {
+    height: 63%;
   }
   .roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag h3 {
     font-size: 1.4rem;
@@ -291,11 +296,62 @@
   .roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag p {
     font-size: 0.8rem;
   }
+  .roadmap-us-container .chinese-wall-container .no-flag2 {
+    left: 503px;
+    bottom: 19px;
+  }
+  .roadmap-us-container .chinese-wall-container .no-flag3 {
+    display: none;
+  }
   .roadmap-us-container .chinese-wall-container .walls {
-    width: 296px;
+    width: 280px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall1 {
+    width: 265px;
+    rotate: -40deg;
+    bottom: 28px;
+    left: 132px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall2 {
+    left: 375px;
+    bottom: 2px;
+    rotate: 0;
+  }
+  .roadmap-us-container .chinese-wall-container .wall3 {
+    left: 661px;
+    rotate: 331deg;
+    bottom: 60px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall4 {
+    left: 554px;
+    bottom: 187px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall4-2 {
+    left: 475px;
+    bottom: 227px;
+  }
+  .roadmap-us-container .chinese-wall-container .wall5 {
+    display: none;
+  }
+  .roadmap-us-container .chinese-wall-container .wall6 {
+    bottom: 258px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level1 {
+    left: 246px;
+    bottom: 19px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level2 {
+    bottom: 79px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level3 {
+    left: 339px;
+    bottom: 274px;
+  }
+  .roadmap-us-container .chinese-wall-container .flag-level4 {
+    bottom: 273px;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
   .roadmap-us-container {
     height: 990px;
   }
@@ -357,7 +413,7 @@
   .roadmap-us-container .chinese-wall-container .no-flag1, .roadmap-us-container .chinese-wall-container .no-flag2, .roadmap-us-container .chinese-wall-container .no-flag3 {
     display: none;
   }
-  .roadmap-us-container .chinese-wall-container .wall2 .wall3, .roadmap-us-container .chinese-wall-container .wall4, .roadmap-us-container .chinese-wall-container .wall4-2 {
+  .roadmap-us-container .chinese-wall-container .wall3, .roadmap-us-container .chinese-wall-container .wall4, .roadmap-us-container .chinese-wall-container .wall4-2 {
     display: none;
   }
   .roadmap-us-container .chinese-wall-container .walls {
@@ -369,10 +425,14 @@
     left: 152px;
     z-index: 20;
   }
+  .roadmap-us-container .chinese-wall-container .wall2 {
+    display: none;
+  }
   .roadmap-us-container .chinese-wall-container .wall5 {
     rotate: 41deg;
     left: 121px;
     bottom: 269px;
+    display: block;
   }
   .roadmap-us-container .chinese-wall-container .wall6 {
     rotate: -31deg;
