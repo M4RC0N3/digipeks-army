@@ -13,11 +13,8 @@ const Roadmap =()=>{
         const flags = document.querySelectorAll("[flag-animation]");
         window.addEventListener('scroll',()=>{
             const windowTop = window.pageYOffset + ((window.innerHeight*3)/8);
-            
             const RoadMap = (RoadMapRef.current.getBoundingClientRect().top*4);
-            console.log(windowTop, RoadMap)
             if(windowTop>RoadMap){
-                console.log('entrou')
                 dataPic.forEach((element)=>{
                     element.classList.add('animate');
                 });
