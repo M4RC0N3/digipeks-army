@@ -45,14 +45,14 @@ const JoinUs=()=>{
                 <div className="house-balloon-container down-right">
                     <img src={HouseBalloon} alt="chinese balloon" width={182} height={284} draggable={false}/>
                 </div>
-                <div className="how-to-buy-container">
+                <ul className="how-to-buy-container">
                     <li type="1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
                     <li type="1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
                     <li type="1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
                     <li type="1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
                     <li type="1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
                     <li type="1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</li>
-                </div>
+                </ul>
             </div>
         </div>
     );
