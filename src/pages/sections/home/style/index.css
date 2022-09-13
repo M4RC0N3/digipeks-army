@@ -150,6 +150,7 @@
   position: absolute;
   bottom: -106px;
   left: -71px;
+  z-index: 10;
 }
 .home-container .nft-container {
   width: 100%;
@@ -566,6 +567,10 @@
   }
 }
 @media only screen and (max-width: 320px) {
+  .home-container header .social-media-container a svg {
+    width: 30px;
+    height: 30px;
+  }
   .home-container .welcome-container .title-container h1 .title {
     font-size: 2.8rem;
   }

@@ -289,6 +289,16 @@
 }
 @media only screen and(max-width:320px){
     .home-container{
+        header{
+            .social-media-container{
+                a{
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
         .welcome-container{
             .title-container{
                 h1{
