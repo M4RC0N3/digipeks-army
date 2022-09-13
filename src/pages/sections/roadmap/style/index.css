@@ -26,6 +26,8 @@
   align-items: center;
   position: absolute;
   z-index: 30;
+  opacity: 0;
+  transform: translateY(20px);
 }
 .roadmap-us-container .title-container h2 {
   font-family: "salden-black", sans-serif;
@@ -41,10 +43,13 @@
 .roadmap-us-container .top-bamboo-container {
   width: 100%;
   height: 211px;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   top: -47px;
   position: absolute;
   z-index: 35;
+  transform: translateY(20px);
 }
 .roadmap-us-container .top-bamboo-container .top-bamboo {
   position: absolute;
@@ -90,10 +95,9 @@
   height: 100%;
   width: 1856px;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   overflow: hidden;
   bottom: 0;
+  transform: translateY(20px);
 }
 .roadmap-us-container .chinese-wall-container .tower-container {
   width: 259px;
@@ -119,7 +123,7 @@
 .roadmap-us-container .chinese-wall-container .tower-container .flag-container .flag {
   position: absolute;
   width: 89%;
-  height: 100%;
+  overflow: hidden;
   border-radius: 10px;
   background-color: #C21B15;
   z-index: 10;
@@ -217,6 +221,76 @@
 .roadmap-us-container .chinese-wall-container .flag-level4 {
   left: 118px;
   bottom: 366px;
+}
+
+[data-animation] {
+  opacity: 0;
+}
+
+[data-animation=first] {
+  opacity: 0;
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84);
+}
+
+[data-animation=second] {
+  opacity: 0;
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 0.7s;
+}
+
+[data-animation=second-1] {
+  opacity: 0;
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 1s;
+}
+
+[data-animation=second-2] {
+  opacity: 0;
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 1.2s;
+}
+
+[data-animation=second-3] {
+  opacity: 0;
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 1.4s;
+}
+
+[data-animation=second-4] {
+  opacity: 0;
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 1.6s;
+}
+
+[data-animation=third] {
+  opacity: 0;
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 2s;
+}
+
+[data-animation].animate {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+[flag-animation] {
+  opacity: 0;
+  height: 15%;
+}
+
+[flag-animation=first] {
+  transition: 0.5s cubic-bezier(0.58, 0.4, 0.15, 0.84) 2.2s;
+}
+
+[flag-animation=second] {
+  transition: 0.5s cubic-bezier(0.58, 0.4, 0.15, 0.84) 2.6s;
+}
+
+[flag-animation=third] {
+  transition: 0.5s cubic-bezier(0.58, 0.4, 0.15, 0.84) 3s;
+}
+
+[flag-animation=fourth] {
+  transition: 0.5s cubic-bezier(0.58, 0.4, 0.15, 0.84) 3.4s;
+}
+
+[flag-animation].animation {
+  opacity: 1;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1860px) {
@@ -477,6 +551,7 @@
     height: 1302px;
   }
   .roadmap-us-container .chinese-wall-container {
+    width: 100%;
     max-width: 420px;
     height: 1035px;
     display: flex;
