@@ -1,10 +1,10 @@
 import {React, useEffect, useState, useRef} from 'react';
 import Lottie from 'react-lottie';
 import './style/index.css';
-import GreenDogKing from '../../../assets/images/green-dog-king.png';
-import GreenDogOrn from '../../../assets/images/green-dog-orn.png';
-import RedDogKing from '../../../assets/images/red-dog-king.png';
-import YellowDogTail from '../../../assets/images/yellow-dog-tail.png'
+import GreenKingDog from '../../../assets/images/green-king-dog.png';
+import GreenHornDog from '../../../assets/images/green-horn-dog.png';
+import RedKingDog from '../../../assets/images/red-king-dog.png';
+import YellowTailDog from '../../../assets/images/yellow-tail-dog.png';
 import ChineseMandala from '../../../assets/images/chinese-mandala.svg';
 import ChinseCloud from '../../../assets/images/chinese-cloud.svg';
 import Diagram from '../../../assets/animations/diagram.json';
@@ -54,16 +54,16 @@ const Index =()=>{
                 </div>
                 <div className="pics-container">
                     <div className="green-dog-king pic-container" pic-animation="teste">
-                        <img src={GreenDogKing} alt="Nft dog king green" width={100} height={100} draggable={false} />
+                        <img src={GreenKingDog} alt="Nft dog king green" width={100} height={100} draggable={false} />
                     </div>
                     <div className="red-dog-king pic-container" pic-animation="teste">
-                        <img src={RedDogKing} alt="Nft dog king red" width={100} height={100} draggable={false} />
+                        <img src={RedKingDog} alt="Nft dog king red" width={100} height={100} draggable={false} />
                     </div>
                     <div className="yellow-dog-ball pic-container" pic-animation="teste">
-                        <img src={YellowDogTail} alt="Nft dog tail yellow" width={100} height={100} draggable={false} />
+                        <img src={YellowTailDog} alt="Nft dog tail yellow" width={100} height={100} draggable={false} />
                     </div>
                     <div className="green-dog-orn pic-container" pic-animation="teste">
-                        <img src={GreenDogOrn} alt="Nft dog Orn green" width={100} height={100} draggable={false} />
+                        <img src={GreenHornDog} alt="Nft dog Orn green" width={100} height={100} draggable={false} />
                     </div>
                 </div>
             </div>

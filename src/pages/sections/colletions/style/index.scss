@@ -1,4 +1,203 @@
-@import "../../../../styles/section-development";
 .colletions-container{
-    @include Indev();
+    width: 100%;
+    min-height: 1080px;
+    height: auto;
+    background-color: #E6302A;
+    background-image: url('../../../../assets/images/pattern-red-background.svg');
+    background-position: center;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+    .text-side-container{
+        display: flex;
+        align-items: center;
+        .title-subtitle-container{
+            margin-left: 60px;
+            position: relative;
+            h2{
+                font-family: "salden-black", sans-serif;
+                color: #fff;
+                font-size: 4.8rem;
+                max-width: 679px;
+                line-height: 95px;
+            }
+            p{
+                font-family: "hero-new-regular", sans-serif;
+                color: #F7E227;
+                text-align: justify;
+                max-width: 535px;
+                font-size: 1.4rem;
+                line-height: 35px;
+                padding-right: 8%;
+            }
+            .hat{
+                width: 150px;
+                height: 150px;
+                left: -91px;
+                top: -24%;
+                rotate: -30deg;
+                position: absolute;
+                background-image: linear-gradient(#F7E227, #FFB300);
+                clip-path: polygon(50% 77%, 0% 100%, 100% 100%);
+            }
+        }
+    }
+    .colletions-side-container{
+        display: flex;
+        align-items: center;
+        min-width: 539px;
+        box-sizing: border-box;
+        padding: 15px 0;
+        overflow: hidden;
+        .pics-container{
+            width: 100%;
+            display: grid;
+            margin-right: 30px;
+            $gridColumn: 88px;
+            grid-template-columns: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+            grid-template-rows: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+            gap: 8px;
+            justify-content: end;
+            .pic-container{
+                width: 100%;
+                height: auto;
+                background-color: #1E4648;
+                border: 3px solid #F7E227;
+                box-sizing: border-box;
+                padding: 5px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .green-ball-dog{
+                grid-column-start: 1;
+                grid-column-end: 3;
+
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .green-horn-dog{
+                grid-column-start: 5;
+                grid-column-end: 6;
+                grid-row-start: 6;
+                grid-row-end: 7;
+            }
+            .green-tail-dog{
+                grid-column-start: 5;
+                grid-column-end: 8;
+                grid-row-start: 7;
+                grid-row-end: 10;
+            }
+            .green-king-dog{
+                grid-column-start: 6;
+                grid-column-end: 7;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+            .green-dog{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 10;
+                grid-row-end: 12;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 65%;
+                    height: auto;
+                }
+            }
+
+            .red-horn-dog{
+                grid-column-start: 1;
+                grid-column-end: 5;
+
+                grid-row-start: 6;
+                grid-row-end: 10;
+            }
+            .red-ball-dog{
+                grid-column-start: 3;
+                grid-column-end: 5;
+
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            .red-tail-dog{
+                grid-column-start: 5;
+                grid-column-end: 8;
+
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+            .red-king-dog{
+                grid-column-start: 6;
+                grid-column-end: 8;
+                grid-row-start: 5;
+                grid-row-end: 7;
+            }
+            .red-dog{
+                grid-column-start: 4;
+                grid-column-end: 6;
+                grid-row-start: 10;
+                grid-row-end: 12;
+            }
+            .yellow-tail-dog{
+                grid-column-start: 4;
+                grid-column-end: 5;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+            .yellow-horn-dog{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 3;
+                grid-row-end: 6;
+            }
+            
+            .yellow-ball-dog{
+                grid-column-start: 4;
+                grid-column-end: 6;
+                grid-row-start: 4;
+                grid-row-end: 6;
+            }
+            .yellow-king-dog{
+                grid-column-start: 7;
+                grid-column-end: 8;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+            .yellow-dog{
+                grid-column-start: 6;
+                grid-column-end: 8;
+                grid-row-start: 10;
+                grid-row-end: 12;
+            }
+        }
+    }
+    .frame{
+        position: absolute;
+    }
+    .top-left{
+        left: 5px;
+        top: 5px;
+        rotate: 90deg;
+    }
+    .top-right{
+        right: 10px;
+        top: 5px;
+        rotate: 180deg;
+    }
+    .bottom-right{
+        right: 10px;
+        bottom: 5px;
+        rotate: -90deg;
+    }
+    .bottom-left{
+        left: 5px;
+        bottom: 5px;
+    }
 }
+@import './responsive';

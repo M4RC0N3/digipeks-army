@@ -1,0 +1,250 @@
+@media only screen and(max-width: 1420px){
+    .colletions-container{
+        .text-side-container{
+            .title-subtitle-container{
+                h2{
+                    font-size: 4rem;
+                    line-height: 75px;
+                }
+                p{
+                    max-width: 460px;
+                    font-size: 1.2rem;
+                }
+                .hat{
+                    top: -30%;
+                }
+            }
+        }
+        .colletions-side-container{
+            .pics-container{
+                $gridColumn: 78px;
+                grid-template-columns: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+                grid-template-rows: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 1230px){
+    .colletions-container{
+        min-height: 850px;
+        .frame{
+            width: 200px;
+            height: auto;
+        }
+        .text-side-container{
+            .title-subtitle-container{
+                h2{
+                    font-size: 3.3rem;
+                    line-height: 67px;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+                .hat{
+                    width: 118px;
+                    height: 118px;
+                    top: -90px;
+                    left: -70px;
+                }
+            }
+        }
+        .colletions-side-container{
+            .pics-container{
+                $gridColumn: 65px;
+                grid-template-columns: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+                grid-template-rows: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 1045px){
+    .colletions-container{
+        min-height: 715px;
+        .frame{
+            width: 175px;
+            height: auto;
+        }
+        .text-side-container{
+            .title-subtitle-container{
+                h2{
+                    font-size: 2.8rem;
+                    line-height: 64px;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .hat{
+                    width: 110px;
+                    height: 110px;
+                    top: -83px;
+                    left: -67px;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 979px){
+    .colletions-container{
+        min-height: 715px;
+        .frame{
+            width: 175px;
+            height: auto;
+        }
+        .text-side-container{
+            .title-subtitle-container{
+                h2{
+                    font-size: 2.5rem;
+                    line-height: 53px;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                .hat{
+                    width: 110px;
+                    height: 110px;
+                    top: -83px;
+                    left: -67px;
+                }
+            }
+        }
+        .colletions-side-container{
+            min-width: 486px;
+            .pics-container{
+                $gridColumn: 60px;
+                grid-template-columns: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+                grid-template-rows: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 900px){
+    .colletions-container{
+        grid-template-rows: .5fr 1fr;
+        grid-template-columns: 1fr;
+        .text-side-container{
+            display: flex;
+            justify-content: center;
+            .title-subtitle-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 25px;
+                margin-right: 25px;
+                margin-top: 105px;
+                h2{
+                    text-align: center;
+                    font-size: 2.8rem;
+                    line-height: 53px;
+                    max-width: 565px;
+                }
+                p{ 
+                    max-width: 550px;
+                    font-size: 1.2rem;
+                    padding: 0;
+                    text-align: justify;
+                }
+                .hat{
+                    width: 110px;
+                    height: 110px;
+                    top: -83px;
+                    left: -67px;
+                }
+            }
+        }
+        .colletions-side-container{
+            min-width: initial;
+            justify-content: center;
+            .pics-container{
+                margin-right: 0;
+                width: fit-content;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 604px){
+    .colletions-container{
+        .frame{
+            width: 150px;
+        }
+        .text-side-container{
+            .title-subtitle-container{
+                .hat{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 485px){
+    .colletions-container{
+        .colletions-side-container{
+            .pics-container{
+                $gridColumn: 45px;
+                grid-template-columns: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+                grid-template-rows: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 455px){
+    .colletions-container{
+        .frame{
+            width: 135px;
+        }
+        .text-side-container{
+            .title-subtitle-container{
+                h2{
+                    font-size: 2.4rem;
+                }
+                p{ 
+                    font-size: 1.1rem;
+                }
+
+            }
+        }
+        .colletions-side-container{
+            .pics-container{
+                $gridColumn: 45px;
+                grid-template-columns: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+                grid-template-rows: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 386px){
+    .colletions-container{
+        .frame{
+            width: 135px;
+        }
+        .text-side-container{
+            .title-subtitle-container{
+                h2{
+                    font-size: 2.2rem;
+                    line-height: 43px;
+                }
+                p{ 
+                    font-size: 1rem;
+                    line-height: 33px;
+                }
+            }
+        }
+        .colletions-side-container{
+            .pics-container{
+                $gridColumn: 35px;
+                grid-template-columns: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+                grid-template-rows: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+            }
+        }
+    }
+}
+@media only screen and(max-width: 300px){
+    .colletions-container{
+        .colletions-side-container{
+            .pics-container{
+                $gridColumn: 30px;
+                grid-template-columns: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+                grid-template-rows: $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn $gridColumn;
+            }
+        }
+    }
+}
