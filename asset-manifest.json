@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digipeks-army/static/css/main.ed373789.css",
-    "main.js": "/digipeks-army/static/js/main.9614d6b3.js",
+    "main.css": "/digipeks-army/static/css/main.b9f877ca.css",
+    "main.js": "/digipeks-army/static/js/main.dbef5793.js",
     "static/js/787.6a5df1db.chunk.js": "/digipeks-army/static/js/787.6a5df1db.chunk.js",
     "static/media/background-patern-home.svg": "/digipeks-army/static/media/background-patern-home.d729991c5a0adb96369b.svg",
     "static/media/pattern-green-background.svg": "/digipeks-army/static/media/pattern-green-background.7e3613bad1966d1a289d.svg",
@@ -24,12 +24,12 @@
     "static/media/frame.svg": "/digipeks-army/static/media/frame.ed79dbf237b095509725ce1590548b1d.svg",
     "static/media/balloon.svg": "/digipeks-army/static/media/balloon.0835c182c56bb7fde9e8d28dbc0cf838.svg",
     "index.html": "/digipeks-army/index.html",
-    "main.ed373789.css.map": "/digipeks-army/static/css/main.ed373789.css.map",
-    "main.9614d6b3.js.map": "/digipeks-army/static/js/main.9614d6b3.js.map",
+    "main.b9f877ca.css.map": "/digipeks-army/static/css/main.b9f877ca.css.map",
+    "main.dbef5793.js.map": "/digipeks-army/static/js/main.dbef5793.js.map",
     "787.6a5df1db.chunk.js.map": "/digipeks-army/static/js/787.6a5df1db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed373789.css",
-    "static/js/main.9614d6b3.js"
+    "static/css/main.b9f877ca.css",
+    "static/js/main.dbef5793.js"
   ]
 }
