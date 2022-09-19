@@ -14,6 +14,7 @@
 .colletions-container .text-side-container {
   display: flex;
   align-items: center;
+  transform: translateY(20px);
 }
 .colletions-container .text-side-container .title-subtitle-container {
   margin-left: 60px;
@@ -76,24 +77,28 @@
   height: 100%;
 }
 .colletions-container .colletions-side-container .pics-container .green-ball-dog {
+  transform: translateY(-110%);
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 .colletions-container .colletions-side-container .pics-container .green-horn-dog {
+  transform: translateY(-680%);
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 6;
   grid-row-end: 7;
 }
 .colletions-container .colletions-side-container .pics-container .green-tail-dog {
+  transform: translateY(-320%);
   grid-column-start: 5;
   grid-column-end: 8;
   grid-row-start: 7;
   grid-row-end: 10;
 }
 .colletions-container .colletions-side-container .pics-container .green-king-dog {
+  transform: translateY(-450%);
   grid-column-start: 6;
   grid-column-end: 7;
   grid-row-start: 4;
@@ -107,66 +112,77 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(-616%);
 }
 .colletions-container .colletions-side-container .pics-container .green-dog img {
   width: 65%;
   height: auto;
 }
 .colletions-container .colletions-side-container .pics-container .red-horn-dog {
+  transform: translateY(-240%);
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 6;
   grid-row-end: 10;
 }
 .colletions-container .colletions-side-container .pics-container .red-ball-dog {
+  transform: translateY(-110%);
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 .colletions-container .colletions-side-container .pics-container .red-tail-dog {
+  transform: translateY(-110%);
   grid-column-start: 5;
   grid-column-end: 8;
   grid-row-start: 1;
   grid-row-end: 4;
 }
 .colletions-container .colletions-side-container .pics-container .red-king-dog {
+  transform: translateY(-320%);
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 5;
   grid-row-end: 7;
 }
 .colletions-container .colletions-side-container .pics-container .red-dog {
+  transform: translateY(-616%);
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 10;
   grid-row-end: 12;
 }
 .colletions-container .colletions-side-container .pics-container .yellow-tail-dog {
+  transform: translateY(-340%);
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 .colletions-container .colletions-side-container .pics-container .yellow-horn-dog {
+  transform: translateY(-180%);
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 6;
 }
 .colletions-container .colletions-side-container .pics-container .yellow-ball-dog {
+  transform: translateY(-270%);
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 6;
 }
 .colletions-container .colletions-side-container .pics-container .yellow-king-dog {
+  transform: translateY(-450%);
   grid-column-start: 7;
   grid-column-end: 8;
   grid-row-start: 4;
   grid-row-end: 5;
 }
 .colletions-container .colletions-side-container .pics-container .yellow-dog {
+  transform: translateY(-616%);
   grid-column-start: 6;
   grid-column-end: 8;
   grid-row-start: 10;
@@ -174,6 +190,7 @@
 }
 .colletions-container .frame {
   position: absolute;
+  z-index: 100;
 }
 .colletions-container .top-left {
   left: 5px;
@@ -193,6 +210,76 @@
 .colletions-container .bottom-left {
   left: 5px;
   bottom: 5px;
+}
+
+[data-animate=first] {
+  opacity: 0;
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 0.5s;
+}
+
+[data-animate=box1] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 0.5s;
+}
+
+[data-animate=box2] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 1s;
+}
+
+[data-animate=box3] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 1.5s;
+}
+
+[data-animate=box4] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 2s;
+}
+
+[data-animate=box5] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 2.5s;
+}
+
+[data-animate=box6] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 3s;
+}
+
+[data-animate=box7] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 3.5s;
+}
+
+[data-animate=box8] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 4s;
+}
+
+[data-animate=box9] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 4.5s;
+}
+
+[data-animate=box10] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 5s;
+}
+
+[data-animate=box11] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 5.5s;
+}
+
+[data-animate=box12] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 6s;
+}
+
+[data-animate=box13] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 6.5s;
+}
+
+[data-animate=box14] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 7s;
+}
+
+[data-animate=box15] {
+  transition: 1.3s cubic-bezier(0.07, -0.06, 0.86, 0.01) 7.5s;
+}
+
+[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0) !important;
 }
 
 @media only screen and (max-width: 1420px) {

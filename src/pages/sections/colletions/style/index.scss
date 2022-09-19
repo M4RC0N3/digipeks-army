@@ -13,6 +13,7 @@
     .text-side-container{
         display: flex;
         align-items: center;
+        transform: translateY(20px);
         .title-subtitle-container{
             margin-left: 60px;
             position: relative;
@@ -73,6 +74,7 @@
                 }
             }
             .green-ball-dog{
+                transform: translateY(-110%);
                 grid-column-start: 1;
                 grid-column-end: 3;
 
@@ -80,18 +82,21 @@
                 grid-row-end: 3;
             }
             .green-horn-dog{
+                transform: translateY(-680%);
                 grid-column-start: 5;
                 grid-column-end: 6;
                 grid-row-start: 6;
                 grid-row-end: 7;
             }
             .green-tail-dog{
+                transform: translateY(-320%);
                 grid-column-start: 5;
                 grid-column-end: 8;
                 grid-row-start: 7;
                 grid-row-end: 10;
             }
             .green-king-dog{
+                transform: translateY(-450%);
                 grid-column-start: 6;
                 grid-column-end: 7;
                 grid-row-start: 4;
@@ -105,6 +110,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transform: translateY(-616%);
                 img{
                     width: 65%;
                     height: auto;
@@ -112,6 +118,7 @@
             }
 
             .red-horn-dog{
+                transform: translateY(-240%);
                 grid-column-start: 1;
                 grid-column-end: 5;
 
@@ -119,6 +126,7 @@
                 grid-row-end: 10;
             }
             .red-ball-dog{
+                transform: translateY(-110%);
                 grid-column-start: 3;
                 grid-column-end: 5;
 
@@ -126,6 +134,7 @@
                 grid-row-end: 3;
             }
             .red-tail-dog{
+                transform: translateY(-110%);
                 grid-column-start: 5;
                 grid-column-end: 8;
 
@@ -133,24 +142,28 @@
                 grid-row-end: 4;
             }
             .red-king-dog{
+                transform: translateY(-320%);
                 grid-column-start: 6;
                 grid-column-end: 8;
                 grid-row-start: 5;
                 grid-row-end: 7;
             }
             .red-dog{
+                transform: translateY(-616%);
                 grid-column-start: 4;
                 grid-column-end: 6;
                 grid-row-start: 10;
                 grid-row-end: 12;
             }
             .yellow-tail-dog{
+                transform: translateY(-340%);
                 grid-column-start: 4;
                 grid-column-end: 5;
                 grid-row-start: 3;
                 grid-row-end: 4;
             }
             .yellow-horn-dog{
+                transform: translateY(-180%);
                 grid-column-start: 1;
                 grid-column-end: 4;
                 grid-row-start: 3;
@@ -158,18 +171,21 @@
             }
             
             .yellow-ball-dog{
+                transform: translateY(-270%);
                 grid-column-start: 4;
                 grid-column-end: 6;
                 grid-row-start: 4;
                 grid-row-end: 6;
             }
             .yellow-king-dog{
+                transform: translateY(-450%);
                 grid-column-start: 7;
                 grid-column-end: 8;
                 grid-row-start: 4;
                 grid-row-end: 5;
             }
             .yellow-dog{
+                transform: translateY(-616%);
                 grid-column-start: 6;
                 grid-column-end: 8;
                 grid-row-start: 10;
@@ -179,6 +195,7 @@
     }
     .frame{
         position: absolute;
+        z-index: 100;
     }
     .top-left{
         left: 5px;
@@ -199,5 +216,60 @@
         left: 5px;
         bottom: 5px;
     }
+}
+$gravity: 1.3s cubic-bezier( 0.07, -0.06, 0.86, 0.01);
+$base-delay: .5s; 
+[data-animate="first"]{
+    opacity: 0;
+    transition: $gravity $base-delay;
+}
+[data-animate="box1"]{
+    transition: $gravity $base-delay*1;
+}
+[data-animate="box2"]{
+    transition: $gravity $base-delay*2;
+}
+[data-animate="box3"]{
+    transition: $gravity $base-delay*3;
+}
+[data-animate="box4"]{
+    transition: $gravity $base-delay*4;
+}
+[data-animate="box5"]{
+    transition: $gravity $base-delay*5;
+}
+[data-animate="box6"]{
+    transition: $gravity $base-delay*6;
+}
+[data-animate="box7"]{
+    transition: $gravity $base-delay*7;
+}
+[data-animate="box8"]{
+    transition: $gravity $base-delay*8;
+}
+[data-animate="box9"]{
+    transition: $gravity $base-delay*9;
+}
+[data-animate="box10"]{
+    transition: $gravity $base-delay*10;
+}
+[data-animate="box11"]{
+    transition: $gravity $base-delay*11;
+}
+[data-animate="box12"]{
+    transition: $gravity $base-delay*12;
+}
+[data-animate="box13"]{
+    transition: $gravity $base-delay*13;
+}
+[data-animate="box14"]{
+    transition: $gravity $base-delay*14;
+}
+[data-animate="box15"]{
+    transition: $gravity $base-delay*15;
+}
+[data-animate].animated{
+    opacity: 1;
+    transform: translateY(0) !important;
 }
 @import './responsive';
