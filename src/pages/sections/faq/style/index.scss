@@ -1,0 +1,14 @@
+@import "../../../../styles/section-development";
+.faq-container{
+    @include Indev();
+    p{
+        font-family: sans-serif;
+        color: #fff;
+        font-size: 2rem;
+        box-sizing: border-box;
+        padding: 0 10px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

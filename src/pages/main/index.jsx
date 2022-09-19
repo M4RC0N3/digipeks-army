@@ -6,6 +6,7 @@ import About from '../sections/about-us/index';
 import JoinUs from '../sections/join-us/index';
 import Roadmap from '../sections/roadmap/index';
 import Colletions from '../sections/colletions/index';
+import Faq from '../sections/faq/index';
 const Index =()=>{
     return(
         <div className="App">
@@ -14,6 +15,7 @@ const Index =()=>{
             <JoinUs/>
             <Roadmap/>
             <Colletions/>
+            <Faq/>
         </div>
     );
 }
