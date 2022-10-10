@@ -1,35 +1,364 @@
 .faq-container {
   width: 100%;
+  min-height: 700px;
   height: 100vh;
-  background-color: rgb(93, 0, 255);
+  background-image: url("../../../../assets/images/pattern-faq-background.svg");
+  background-image: url("../../../../assets/images/pattern-faq-background.svg"), radial-gradient(#275457, #16393B);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.faq-container .title-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  margin-top: 55px;
+  z-index: 20;
 }
-.faq-container h2 {
-  font-family: sans-serif;
-  font-weight: bold;
+.faq-container .title-container h2 {
+  font-family: "salden-black", sans-serif;
   color: #fff;
-  font-size: 3rem;
-  box-sizing: border-box;
-  padding: 0 10px;
-  width: 100%;
-  text-align: center;
+  font-size: 6rem;
+  position: absolute;
+  z-index: 1;
 }
-.faq-container .container {
-  width: 60%;
+.faq-container .title-container img {
+  max-width: 740px;
   height: auto;
-  max-width: 600px;
-  margin-top: 40px;
 }
-.faq-container p {
-  font-family: sans-serif;
-  color: #fff;
-  font-size: 2rem;
+.faq-container .parchments-container {
+  width: 853px;
+  height: 100%;
+  margin-top: 50px;
+  z-index: 10;
+}
+.faq-container .chinese-column-container {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq-container .chinese-column-container .bases-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq-container .chinese-column-container .bases-container .larger-base {
+  width: 170px;
+  height: 70px;
+  background-image: linear-gradient(#F7E227, #F7B927);
+}
+.faq-container .chinese-column-container .bases-container .smaller-base {
+  width: 135px;
+  height: 25px;
+  background-image: linear-gradient(#F7E227, #F7B927);
+}
+.faq-container .chinese-column-container .bottom {
+  rotate: 180deg;
+}
+.faq-container .chinese-column-container .column {
+  width: 120px;
+  height: 100%;
+  background-image: linear-gradient(90deg, #C21B15, #A52522, #C21B15);
+  overflow: hidden;
+}
+.faq-container .column-left {
+  left: 75px;
+}
+.faq-container .column-right {
+  right: 75px;
+}
+.faq-container .bamboo {
+  position: absolute;
+}
+.faq-container .bamboo-no-leaf {
+  height: 1090px;
+  width: auto;
+  top: -27px;
+}
+.faq-container .bamboo-left {
+  left: 400px;
+}
+.faq-container .bamboo-right {
+  right: 215px;
+}
+.faq-container .bamboo-dark {
+  left: 174px;
+}
+.faq-container .balloon {
+  position: absolute;
+}
+.faq-container .balloon-right {
+  right: 307px;
+}
+.faq-container .balloon-left {
+  left: 280px;
+  z-index: 10;
+}
+.faq-container .parchments-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq-container .parchments-container .bamboo {
+  position: absolute;
+  transform: rotateX(180deg);
+}
+.faq-container .parchments-container .left {
+  left: 0;
+}
+.faq-container .parchments-container .right {
+  right: 0;
+}
+.faq-container .parchments-container .parchment-scroll {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  height: auto;
+}
+.faq-container .parchments-container .parchment-scroll::-webkit-scrollbar {
+  width: 2px;
+}
+.faq-container .parchments-container .parchment-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.faq-container .parchments-container .parchment-scroll::-webkit-scrollbar-thumb {
+  background-color: #F7B927;
+  border-radius: 20px;
+  border: 3px solid #F7B927;
+}
+.faq-container .parchments-container .parchment-scroll .parchment {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 4px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .rolled {
+  width: 100%;
+  height: 55px;
+  background-image: linear-gradient(#C21B15, #A52522, #C21B15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
   padding: 0 10px;
+  position: relative;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .rolled p {
+  color: #F7E227;
+  font-family: "hero-new-regular", sans-serif;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .rolled .parchment-content-container {
+  position: absolute;
+  width: 90%;
+  height: 0px;
+  background-color: #C21B15;
+  top: 54px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-image: url('../../../../assets/images/parchment-frame.svg');
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position: 35% 89%; */
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84);
+}
+.faq-container .parchments-container .parchment-scroll .parchment .rolled .parchment-content-container .text-container {
   width: 100%;
-  text-align: center;
-  margin-top: 20px;
+  background-color: #ECDFC3;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .rolled .parchment-content-container .text-container p {
+  opacity: 0;
+  display: block;
+  text-align: justify;
+  font-family: "hero-new-regular", sans-serif;
+  color: #173B3D;
+  line-height: 25px;
+  transition: 1s ease-out 1s;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question1 .checkbox_pergunta {
+  width: 36px;
+  height: 100%;
+  position: absolute;
+  right: 6px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question1 .checkbox_pergunta:checked ~ div {
+  height: 445px;
+  padding: 32px 45px 46px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question1 .checkbox_pergunta:checked ~ div .text-container {
+  height: auto;
+  padding: 20px 17px 20px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question1 .checkbox_pergunta:checked ~ div .text-container p {
+  transition: 1s ease-out 0s;
+  opacity: 1;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question1 .checkbox_pergunta:checked ~ .chevron-icon {
+  rotate: 180deg;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question2 .checkbox_pergunta {
+  width: 36px;
+  height: 100%;
+  position: absolute;
+  right: 6px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question2 .checkbox_pergunta:checked ~ div {
+  height: 445px;
+  padding: 32px 45px 46px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question2 .checkbox_pergunta:checked ~ div .text-container {
+  height: auto;
+  padding: 20px 17px 20px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question2 .checkbox_pergunta:checked ~ div .text-container p {
+  transition: 1s ease-out 0s;
+  opacity: 1;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question2 .checkbox_pergunta:checked ~ .chevron-icon {
+  rotate: 180deg;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question3 .checkbox_pergunta {
+  width: 36px;
+  height: 100%;
+  position: absolute;
+  right: 6px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question3 .checkbox_pergunta:checked ~ div {
+  height: 445px;
+  padding: 32px 45px 46px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question3 .checkbox_pergunta:checked ~ div .text-container {
+  height: auto;
+  padding: 20px 17px 20px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question3 .checkbox_pergunta:checked ~ div .text-container p {
+  transition: 1s ease-out 0s;
+  opacity: 1;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question3 .checkbox_pergunta:checked ~ .chevron-icon {
+  rotate: 180deg;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question4 .checkbox_pergunta {
+  width: 36px;
+  height: 100%;
+  position: absolute;
+  right: 6px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question4 .checkbox_pergunta:checked ~ div {
+  height: 445px;
+  padding: 32px 45px 46px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question4 .checkbox_pergunta:checked ~ div .text-container {
+  height: auto;
+  padding: 20px 17px 20px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question4 .checkbox_pergunta:checked ~ div .text-container p {
+  transition: 1s ease-out 0s;
+  opacity: 1;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question4 .checkbox_pergunta:checked ~ .chevron-icon {
+  rotate: 180deg;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta {
+  width: 36px;
+  height: 100%;
+  position: absolute;
+  right: 6px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta:checked ~ div {
+  height: 445px;
+  padding: 32px 45px 46px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta:checked ~ div .text-container {
+  height: auto;
+  padding: 20px 17px 20px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta:checked ~ div .text-container p {
+  transition: 1s ease-out 0s;
+  opacity: 1;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta:checked ~ .chevron-icon {
+  rotate: 180deg;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .metal-part-container {
+  display: flex;
+  align-items: center;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .metal-part-container .big-part {
+  background-color: #F7B927;
+  background-image: linear-gradient(#F7E227, #F7B927, #F7E227);
+  width: 35px;
+  height: 90px;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .metal-part-container .small-part {
+  width: 12px;
+  height: 43px;
+  background-image: linear-gradient(#F7E227, #F7B927, #F7E227);
+}
+.faq-container .parchments-container .parchment-scroll .parchment .metal-part-container:last-child {
+  rotate: 180deg;
+}
+.faq-container .parchments-container .parchment1 {
+  z-index: 500;
+}
+.faq-container .parchments-container .parchment2 {
+  z-index: 400;
+}
+.faq-container .parchments-container .parchment3 {
+  z-index: 300;
+}
+.faq-container .parchments-container .parchment4 {
+  z-index: 200;
+}
+.faq-container .parchments-container .parchment5 {
+  z-index: 100;
+}
+
+[chevron-icon] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84);
+}
+
+[chevron-icon=rotate] {
+  rotate: 0;
+}
+
+[chevron-icon].rotate {
+  rotate: 180deg;
 }/*# sourceMappingURL=index.css.map */
