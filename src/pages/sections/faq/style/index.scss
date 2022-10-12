@@ -170,10 +170,6 @@
                         top: 54px;
                         left: 50%;
                         transform: translateX(-50%);
-                        /* background-image: url('../../../../assets/images/parchment-frame.svg');
-                        background-repeat: no-repeat;
-                        background-size: 98%;
-                        background-position: 35% 89%; */
                         display: flex;
                         justify-content: center;
                         box-sizing: border-box;
@@ -209,7 +205,7 @@
                         cursor: pointer;
                         z-index: 100;
                         &:checked~div{
-                            height: 445px;
+                            height: 440px;
                             padding: 32px 45px 46px;
                             .text-container{
                                 height: auto;
@@ -335,3 +331,4 @@
     opacity: 1;
     transform: translateY(0);
 }
+@import './responsive.scss';
