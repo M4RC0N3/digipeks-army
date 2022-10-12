@@ -1,7 +1,6 @@
 .faq-container {
   width: 100%;
   min-height: 700px;
-  height: 100vh;
   background-image: url("../../../../assets/images/pattern-faq-background.svg");
   background-image: url("../../../../assets/images/pattern-faq-background.svg"), radial-gradient(#275457, #16393B);
   background-repeat: no-repeat;
@@ -98,6 +97,9 @@
 }
 .faq-container .balloon {
   position: absolute;
+  transform-origin: 50% 0;
+  -webkit-animation: BalloonAnimation 6s cubic-bezier(0.37, 0.29, 0.14, 0.94) infinite;
+          animation: BalloonAnimation 6s cubic-bezier(0.37, 0.29, 0.14, 0.94) infinite;
 }
 .faq-container .balloon-right {
   right: 307px;
@@ -124,12 +126,13 @@
 }
 .faq-container .parchments-container .parchment-scroll {
   width: 80%;
+  min-height: 682px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
-  height: auto;
+  overflow-x: hidden;
 }
 .faq-container .parchments-container .parchment-scroll::-webkit-scrollbar {
   width: 2px;
@@ -196,6 +199,9 @@
   color: #173B3D;
   line-height: 25px;
   transition: 1s ease-out 1s;
+}
+.faq-container .parchments-container .parchment-scroll .parchment .rolled .chevron-icon {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84);
 }
 .faq-container .parchments-container .parchment-scroll .parchment .question1 .checkbox_pergunta {
   width: 36px;
@@ -293,30 +299,6 @@
 .faq-container .parchments-container .parchment-scroll .parchment .question4 .checkbox_pergunta:checked ~ .chevron-icon {
   rotate: 180deg;
 }
-.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta {
-  width: 36px;
-  height: 100%;
-  position: absolute;
-  right: 6px;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 100;
-}
-.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta:checked ~ div {
-  height: 445px;
-  padding: 32px 45px 46px;
-}
-.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta:checked ~ div .text-container {
-  height: auto;
-  padding: 20px 17px 20px;
-}
-.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta:checked ~ div .text-container p {
-  transition: 1s ease-out 0s;
-  opacity: 1;
-}
-.faq-container .parchments-container .parchment-scroll .parchment .question5 .checkbox_pergunta:checked ~ .chevron-icon {
-  rotate: 180deg;
-}
 .faq-container .parchments-container .parchment-scroll .parchment .metal-part-container {
   display: flex;
   align-items: center;
@@ -351,14 +333,85 @@
   z-index: 100;
 }
 
-[chevron-icon] {
+@-webkit-keyframes BalloonFaqAnimation {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes BalloonFaqAnimation {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+[data-parchment] {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+[data-parchment=parchment1] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 1.8s;
+}
+
+[data-parchment=parchment2] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 2.3s;
+}
+
+[data-parchment=parchment3] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 2.8s;
+}
+
+[data-parchment=parchment4] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 3.3s;
+}
+
+[data-parchment].run-animation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-faq-content] {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+[data-faq-content=title] {
   transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84);
 }
 
-[chevron-icon=rotate] {
-  rotate: 0;
+[data-faq-content=bamboo-no-leaf-left] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 0.8s;
 }
 
-[chevron-icon].rotate {
-  rotate: 180deg;
+[data-faq-content=bamboo-no-leaf-right] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 1.2s;
+}
+
+[data-faq-content=bamboo-dark] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 1.4s;
+}
+
+[data-faq-content=bamboo-left] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 1.8s;
+}
+
+[data-faq-content=bamboo-right] {
+  transition: 1s cubic-bezier(0.58, 0.4, 0.15, 0.84) 1.8s;
+}
+
+[data-faq-content].run-animation {
+  opacity: 1;
+  transform: translateY(0);
 }/*# sourceMappingURL=index.css.map */
