@@ -48,7 +48,6 @@
     }
     .welcome-container{
         width: 100%;
-        height: 100vh;
         box-sizing: border-box;
         position: relative;
         .title-container{
@@ -161,6 +160,7 @@
     }
     .nft-container{
         width: 100%;
+        min-height: 720px;
         height: 100vh;
         .columns-container{
             display: grid;

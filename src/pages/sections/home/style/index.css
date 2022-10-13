@@ -58,7 +58,6 @@
 }
 .home-container .welcome-container {
   width: 100%;
-  height: 100vh;
   box-sizing: border-box;
   position: relative;
 }
@@ -154,6 +153,7 @@
 }
 .home-container .nft-container {
   width: 100%;
+  min-height: 720px;
   height: 100vh;
 }
 .home-container .nft-container .columns-container {
@@ -347,7 +347,7 @@
 @media only screen and (max-width: 2560px) {
   .home-container .nft-container .container-track {
     width: 100%;
-    height: 180%;
+    height: 1642px;
     right: 0;
     top: -355px;
   }
@@ -362,19 +362,6 @@
 @media only screen and (max-width: 1544px) {
   .home-container .nft-container .container-track {
     width: 108%;
-    height: 180%;
-    right: 0;
-    top: -355px;
-  }
-  .home-container .nft-container .container-track div {
-    position: absolute;
-    right: -668px;
-  }
-}
-@media only screen and (max-width: 1544px) {
-  .home-container .nft-container .container-track {
-    width: 108%;
-    height: 180%;
     right: 0;
     top: -355px;
   }
@@ -398,7 +385,6 @@
   }
   .home-container .nft-container .container-track {
     width: 110%;
-    height: 180%;
     right: 0;
     top: -355px;
   }
@@ -426,14 +412,14 @@
     font-size: 13rem;
   }
   .home-container .nft-container .container-track {
-    width: 115%;
+    width: 137%;
     height: 138%;
     right: 0;
     top: -37px;
   }
   .home-container .nft-container .container-track div {
     position: absolute;
-    right: -597px;
+    right: -57%;
     top: -130px;
   }
 }
