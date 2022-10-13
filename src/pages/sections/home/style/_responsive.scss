@@ -3,7 +3,7 @@
         .nft-container{
             .container-track{
                 width: 100%;
-                height: 180%;
+                height: 1642px;
                 right: 0;
                 top: -355px;
                 div{
@@ -24,7 +24,6 @@
         .nft-container{
             .container-track{
                 width: 108%;
-                height: 180%;
                 right: 0;
                 top: -355px;
                 div{
@@ -36,22 +35,6 @@
     }
 }
 
-@media only screen and(max-width:1544px){
-    .home-container{
-        .nft-container{
-            .container-track{
-                width: 108%;
-                height: 180%;
-                right: 0;
-                top: -355px;
-                div{
-                    position: absolute;
-                    right: -668px;
-                }
-            }
-        }
-    }
-}
 @media only screen and(max-width:1400px){
     .home-container{
         .welcome-container{
@@ -77,7 +60,6 @@
             }
             .container-track{
                 width: 110%;
-                height: 180%;
                 right: 0;
                 top: -355px;
                 div{                          
@@ -113,13 +95,13 @@
                 }
             }
             .container-track{
-                width: 115%;
+                width: 137%;
                 height: 138%;
                 right: 0;
                 top: -37px;
                 div{
                     position: absolute;
-                    right: -597px;
+                    right: -57%;
                     top: -130px;
                 }
             }
