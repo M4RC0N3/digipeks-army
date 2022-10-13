@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/digipeks-army/static/css/main.7eb6f17b.css",
+    "main.css": "/digipeks-army/static/css/main.72306eeb.css",
     "main.js": "/digipeks-army/static/js/main.9569ba82.js",
     "static/js/787.6a5df1db.chunk.js": "/digipeks-army/static/js/787.6a5df1db.chunk.js",
     "static/media/background-patern-home.svg": "/digipeks-army/static/media/background-patern-home.d729991c5a0adb96369b.svg",
@@ -31,12 +31,12 @@
     "static/media/balloon-round.svg": "/digipeks-army/static/media/balloon-round.22ab3cb4cb9ffc40d72602fb71df8ec0.svg",
     "index.html": "/digipeks-army/index.html",
     "static/media/chevron.svg": "/digipeks-army/static/media/chevron.a721e5b470f144ad9b41cd498cf3b405.svg",
-    "main.7eb6f17b.css.map": "/digipeks-army/static/css/main.7eb6f17b.css.map",
+    "main.72306eeb.css.map": "/digipeks-army/static/css/main.72306eeb.css.map",
     "main.9569ba82.js.map": "/digipeks-army/static/js/main.9569ba82.js.map",
     "787.6a5df1db.chunk.js.map": "/digipeks-army/static/js/787.6a5df1db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7eb6f17b.css",
+    "static/css/main.72306eeb.css",
     "static/js/main.9569ba82.js"
   ]
 }
