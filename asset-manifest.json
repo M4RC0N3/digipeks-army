@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/digipeks-army/static/css/main.72306eeb.css",
-    "main.js": "/digipeks-army/static/js/main.9569ba82.js",
+    "main.js": "/digipeks-army/static/js/main.42c6c11d.js",
     "static/js/787.6a5df1db.chunk.js": "/digipeks-army/static/js/787.6a5df1db.chunk.js",
     "static/media/background-patern-home.svg": "/digipeks-army/static/media/background-patern-home.d729991c5a0adb96369b.svg",
     "static/media/pattern-faq-background.svg": "/digipeks-army/static/media/pattern-faq-background.9c7d1f4202b870ae677e.svg",
@@ -10,11 +10,11 @@
     "static/media/Salden-black.otf": "/digipeks-army/static/media/Salden-black.82b58a0ce2096c7a7e26.otf",
     "static/media/pattern-red-background.svg": "/digipeks-army/static/media/pattern-red-background.6eaeb405eedc427dec3d.svg",
     "static/media/cloud-grid.svg": "/digipeks-army/static/media/cloud-grid.e781a9dd9ac1a8920fde644ce2d7eada.svg",
-    "static/media/digipeks-logo-green.png": "/digipeks-army/static/media/digipeks-logo-green.0bf367836f85ec16fd79.png",
     "static/media/valorant.ttf": "/digipeks-army/static/media/valorant.86ec8370af32018a2391.ttf",
     "static/media/tree-gold.svg": "/digipeks-army/static/media/tree-gold.645556c7c5a1bcacb26f1c8ed999fdfa.svg",
     "static/media/tree.svg": "/digipeks-army/static/media/tree.68ef891c94782ec6c576771b8ec965a4.svg",
     "static/media/chinese-cloud.svg": "/digipeks-army/static/media/chinese-cloud.c4c343ab9e84a964e0839ddd4972d5aa.svg",
+    "static/media/digipeks-army-logo.svg": "/digipeks-army/static/media/digipeks-army-logo.e52151aa7d7f5ed188e9b2b4995efa94.svg",
     "static/media/title-frame.svg": "/digipeks-army/static/media/title-frame.59da4c9af823b9582d9b0aefbe392934.svg",
     "static/media/title-frame-little.svg": "/digipeks-army/static/media/title-frame-little.8aa7f3f91957ad2c4423b9c9559ac983.svg",
     "static/media/coins.svg": "/digipeks-army/static/media/coins.be55a0aa91562e0a15ba93d8047118d9.svg",
@@ -32,11 +32,11 @@
     "index.html": "/digipeks-army/index.html",
     "static/media/chevron.svg": "/digipeks-army/static/media/chevron.a721e5b470f144ad9b41cd498cf3b405.svg",
     "main.72306eeb.css.map": "/digipeks-army/static/css/main.72306eeb.css.map",
-    "main.9569ba82.js.map": "/digipeks-army/static/js/main.9569ba82.js.map",
+    "main.42c6c11d.js.map": "/digipeks-army/static/js/main.42c6c11d.js.map",
     "787.6a5df1db.chunk.js.map": "/digipeks-army/static/js/787.6a5df1db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72306eeb.css",
-    "static/js/main.9569ba82.js"
+    "static/js/main.42c6c11d.js"
   ]
 }
