@@ -2,7 +2,7 @@ import {React, useState} from 'react';
 import Lottie from 'react-lottie';
 import './style/index.css'
 import TrackStar from '../../../assets/animations/track-star.json';
-import DigipeksLogo from '../../../assets/images/digipeks-army-logo.svg';
+import DigipeksLogo from '../../../assets/images/digipeks-army-logo.png';
 import Tree from '../../../assets/images/tree.svg';
 import Coins from '../../../assets/images/coins.svg';
 
